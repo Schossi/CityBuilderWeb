@@ -1,6 +1,6 @@
 ---
-permalink: /defense/
-title: "2D Tower Defense Demo"
+permalink: /demos/
+title: "Demos"
 ---
 
-DEFENSE DEMO
+DEMOS
