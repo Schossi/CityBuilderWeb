@@ -1,6 +1,6 @@
 ---
-permalink: /manual/buildings
-title: "Buildings"
+permalink: /manual/layers
+title: "Layers"
 sidebar:
   title: "Manual"
   nav: manual

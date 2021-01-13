@@ -20,7 +20,7 @@ manual:
       - title: "Walkers"
         url: /manual/walkers
       - title: "Layers"
-        url: /manual/dependencies
+        url: /manual/layers
   - title: "Systems"
     children:
       - title: "Resources"
