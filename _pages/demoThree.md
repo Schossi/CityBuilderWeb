@@ -2,7 +2,7 @@
 permalink: /demos/three
 title: "3D City Builder Demo"
 sidebar:
-  title: ""
+  title: "Demos"
   nav: demos
 ---
 

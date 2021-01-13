@@ -11,43 +11,39 @@ demos:
     url: /demos/defense
 
 manual:
-   - title: "Coming Soon"
-  #   children:
-  #     - title: "Child Page A1"
-  #       url: /
-  #     - title: "Child Page A2"
-  #       url: /
-  #     - title: "Child Page A3"
-  #       url: /
-  #     - title: "Child Page A4"
-  #       url: /
-  # - title: "Parent Page B"
-  #   children:
-  #     - title: "Child Page B1"
-  #       url: /
-  #     - title: "Child Page B2"
-  #       url: /
-  #     - title: "Child Page B3"
-  #       url: /
-  #     - title: "Child Page B4"
-  #       url: /
-  #     - title: "Child Page B5"
-  #       url: /
-  # - title: "Parent Page C"
-  #   children:
-  #     - title: "Child Page C1"
-  #       url: /
-  #     - title: "Child Page C2"
-  #       url: /
-  #     - title: "Child Page C3"
-  #       url: /
-  #     - title: "Child Page C4"
-  #       url: /
-  #     - title: "Child Page C5"
-  #       url: /
-  # - title: "Parent Page D"
-  #   children:
-  #     - title: "Child Page D1"
-  #       url: /
-  #     - title: "Child Page D2"
-  #       url: /
+  - title: "Getting Started"
+    url: /manual
+  - title: "General"
+    children:
+      - title: "Buildings"
+        url: /manual/buildings
+      - title: "Walkers"
+        url: /manual/walkers
+      - title: "Layers"
+        url: /manual/dependencies
+  - title: "Systems"
+    children:
+      - title: "Resources"
+        url: /manual/resources
+      - title: "People"
+        url: /manual/people
+      - title: "Services"
+        url: /manual/services
+      - title: "Risks"
+        url: /manual/risks
+      - title: "Monuments"
+        url: /manual/monuments
+      - title: "Attacks"
+        url: /manual/attacks
+  - title: "Other"
+    children:
+      - title: "Structures"
+        url: /manual/structures
+      - title: "Roads"
+        url: /manual/roads
+      - title: "Dependencies"
+        url: /manual/dependencies
+      - title: "Scores"
+        url: /manual/scores
+      - title: "Views"
+        url: /manual/views

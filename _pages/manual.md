@@ -1,8 +1,8 @@
 ---
 permalink: /manual/
-title: "Manual"
+title: "Overview"
 sidebar:
-  title: ""
+  title: "Manual"
   nav: manual
 ---
 

@@ -2,7 +2,7 @@
 permalink: /demos/defense
 title: "2D Tower Defense Demo"
 sidebar:
-  title: ""
+  title: "Demos"
   nav: demos
 ---
 
