@@ -29,4 +29,4 @@ The walker randomly walks around while trying to avoid points already visited. I
 
 ### Wander
 Moves to a random adjacent point
->homeless
+>homeless walkers
