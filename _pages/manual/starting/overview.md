@@ -1,5 +1,5 @@
 ---
-permalink: /manual/
+permalink: /manual
 title: "Overview"
 sidebar:
   title: "Manual"

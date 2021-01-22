@@ -12,7 +12,9 @@ demos:
 
 manual:
   - title: "Getting Started"
-    url: /manual
+    children:
+      - title: "Overview"
+        url: /manual
   - title: "General"
     children:
       - title: "Buildings"
@@ -39,11 +41,11 @@ manual:
     children:
       - title: "Structures"
         url: /manual/structures
-      - title: "Roads"
-        url: /manual/roads
       - title: "Dependencies"
         url: /manual/dependencies
       - title: "Scores"
         url: /manual/scores
       - title: "Views"
         url: /manual/views
+      - title: "Misc"
+        url: /manual/misc
