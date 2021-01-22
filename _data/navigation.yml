@@ -11,10 +11,20 @@ demos:
     url: /demos/defense
 
 manual:
-  - title: "Getting Started"
+  - title: "Overview"
+    url: /manual
+  - title: "Demos"
     children:
-      - title: "Overview"
-        url: /manual
+      - title: "3D City Builder"
+        url: /manual/three
+      - title: "2D Tower Defense"
+        url: /manual/defense
+  - title: "How To"
+    children:
+      - title: "City Builder from Scratch"
+        url: /manual/scratch
+      - title: "Custom Systems"
+        url: /manual/custom
   - title: "General"
     children:
       - title: "Buildings"
