@@ -6,6 +6,8 @@ sidebar:
   nav: manual
 ---
 
+Play it [here]({% link _pages/demos/demoDefense.md %}), primarily uses the [Attacks]({% link _pages/manual/systems/attacks.md %}) and items retriever [Resource]({% link _pages/manual/systems/resources.md %}) systems.
+
 ## Buildings
 
 |![Center](/assets/images/defense/defenseCenter.png)|__Center__|AttackableComponent|Health: 100|
