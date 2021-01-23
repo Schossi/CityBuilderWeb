@@ -1,6 +1,8 @@
 ---
 title: "coming soon"
-layout: single
+layout: splash
+header:
+  image: /assets/images/splash.png
 ---
 
 elevator pitch

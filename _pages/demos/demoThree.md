@@ -6,7 +6,62 @@ sidebar:
   nav: demos
 ---
 
-<iframe frameborder="0" src="https://itch.io/embed-upload/3246447?color=333333" allowfullscreen="0" width="980" height="688"></iframe>  
+A basic city builder created in full 3D.
+
+<iframe frameborder="0" src="https://itch.io/embed-upload/3246447?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
   
-  
-For an in depth breakdown of all the components please see the [Manual]({% link _pages/manual/demos/defense.md %})
+Buildings are rotated using the __R__ key. Migration is always balanced with employment so people will only come to your city if there are enough jobs.  
+
+For an in depth breakdown of all the components please see the [Manual]({% link _pages/manual/demos/defense.md %})  
+
+## Walkthrough
+### Settlement
+Start off by creating a simple housing block. A small road loop with about 8 houses and the basic amenities:
+* well for water
+* workshop to keep buildings from collapsing
+* doctor to prevent disease  
+
+Also build some gardens to raise the desirability of the area.
+This should be enough to evolve housing from tents to huts.
+
+Now we need to provide some food. To do this we will need the following.
+* farms to grow potatoes
+* silo to store them
+* market for distribution  
+
+The farms have to be created on the fertile ground of the forrest. Create a side road there and put a blocker on it so the walkers servicing the houses don't wander off.
+The market has to be built close to the housing so the roaming seller can reach the houses. The silo should probably be built somewhere in between.  
+If not enough people move into the housing you should build more farms. People will only immigrate if they have jobs in your city.
+
+![Settlement Mission Won](/assets/images/settlement.png)
+### Comfort
+Start this mission with the same basic setup as the previous one.  
+You will need to evolve housing to its highest level to generate taxes.  
+To evolve houses into palaces you need the following.
+* second source of food  
+build some hunters in addition to the farms
+* entertainment  
+build an entertainer camp to train entertainers. Make sure you place a firefighter close to it because entertainers in training tend to set things on fire.  
+For the entertainers to actually perform build some stages close to the housing area. __Stages need to be placed on road corners.__  
+
+As soon as your housing is evolved into palaces you can build a tax collector and watch the money roll in.
+
+![Comfort Mission Won](/assets/images/comfort.png)
+
+### Monument
+
+All that matters in this mission is building the obelisk. This means you can keep housing at a pretty basic comfort level, like a monster. You just have to make sure you have enough housing for the employees needed to support the building effort.  
+
+To build the obelisk you need.
+* the obelisk building site(obviously)
+* labour camp for basic workers  
+these flatten the ground an haul granite to the site  
+to function a labour camp needs tools
+  * an iron mine mines iron ore
+  * a smith creates tools from it  
+  smiths are a fire hazard so build a firefighter close to it
+* mason camp  
+masons work the granite at the building site
+* granite mine 
+
+![Monument Mission Won](/assets/images/monument.png)
