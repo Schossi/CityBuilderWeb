@@ -1,5 +1,5 @@
 ---
-permalink: /manual/scratcch
+permalink: /manual/scratch
 title: "City Builder from Scratch"
 sidebar:
   title: "Manual"

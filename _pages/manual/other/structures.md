@@ -8,7 +8,7 @@ sidebar:
 
 A structure is basically anything that is placed on the map.  
 The default structure manager stores basic structures in a dictionary based on the position, so checking and retrieving structures when the position is known is fast. This has the downside that only one regular structure can be stored per position. Since only Buildings are stored this way in Core CCBK this is not a problem.  
-StructureCollections and Tiles are always stored seperately and Roads register themselfes as underlying structures which also stored them in a seperate list.
+StructureCollections and Tiles are always stored separately and Roads register themselves as underlying structures which also stored them in a separate list.
 
 Structures are defined by the points they occupy on the map as well as three bit flags:
 * IsDestructible  

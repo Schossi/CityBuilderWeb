@@ -8,7 +8,7 @@ sidebar:
 
 Scores represent all kinds of numerically quantifiable values for a city. 
 They are used for displaying statistics to the player and checking win conditions.  
-The different Score Scripts eacht implement a way of calculting a score value. They are available as ScriptableObjects in the CityBuilder/Scores Context Menu.  
+The different Score Scripts each implement a way of calculating a score value. They are available as ScriptableObjects in the CityBuilder/Scores Context Menu.  
   
 You can easily create your own scores by inheriting from Score and implementing the Calculate Method.  
 
@@ -32,4 +32,4 @@ Calculates the number of people buildings would cover against the current popula
 
 ### Multiplied, Summed, Threshold Score  
 can be used to transform other scores
-> culture = entertainment + monuments, different thresold of employment, ...  
+> culture = entertainment + monuments, different threshold of employment, ...  

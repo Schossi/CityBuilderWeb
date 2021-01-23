@@ -19,7 +19,7 @@ The two essential interfaces regarding resources are IItemReceiver and IItemGive
 * Item receivers are building component that accept items from others.  
 Other components deliver items to receivers.  
 * Item givers are building components that provide certain items for others.  
-Other components aquire items from givers.  
+Other components acquire items from givers.  
 
 ### Storage
 

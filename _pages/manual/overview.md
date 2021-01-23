@@ -8,7 +8,7 @@ sidebar:
 
 ## Welcome
 
-This is the manual for Classic City Builder Kit by Softleitner. Classic City Builder Kit is quite the mouthfull so i will be refering to it using the shorthand CCBK.  
+This is the manual for Classic City Builder Kit by SoftLeitner. Classic City Builder Kit is quite the mouthful so i will be referring to it using the shorthand CCBK.  
 
 Oldschool walker based City Builders are very systems heavy games that require lots of tweaking and balancing to get right. CCBK was created with the aim of providing all the common tropes of the genre and making them easily accessible in the Editor.  
 
@@ -16,7 +16,7 @@ The kit was created with the classic evolve housing, build monuments type of gam
 
 ## Project Structure
 
-CCBK is seperated into multiple assemblies. Which ones you need depends on how you are planning to use the Kit. For your first exploration just import the entire asset into a new urp project.
+CCBK is separated into multiple assemblies. Which ones you need depends on how you are planning to use the Kit. For your first exploration just import the entire asset into a new urp project.
 
 * CityBuilderCore  
 The Core Framework of CCBK.  
@@ -46,7 +46,7 @@ Both demos depend on either layers, tags or sorting layers. __If these settings 
 
 ## Usage
 
-After familiarising yourself with CCBK you should be ready to start your project. I'll outline three basic levels of usage for CCBK here. The first two don't require any coding, implementing custom systems assumes basic knowledge of C#.
+After familiarizing yourself with CCBK you should be ready to start your project. I'll outline three basic levels of usage for CCBK here. The first two don't require any coding, implementing custom systems assumes basic knowledge of C#.
 
 * Adapting one of the Demos  
 Is one of the demos close enough to what you are trying to achieve? Great!  

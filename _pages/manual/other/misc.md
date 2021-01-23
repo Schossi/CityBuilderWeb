@@ -7,7 +7,7 @@ sidebar:
 ---
 
 ## Saving
-CCBK includes a complete save and load system that serializes savedata using unitys json serializer. The save data containers and save/load logic can generally be found in '#region Saving' at the end of the respective script.  
+CCBK includes a complete save and load system that serializes save data using unity's json serializer. The save data containers and save/load logic can generally be found in '#region Saving' at the end of the respective script.  
 Save-/LoadData are perpetuated through the different systems starting at the central manager scripts. This means core components of CCBK like building components and walkers already have overridable Save/Load Methods that will be called without any extra work.  
 The easiest way to hook data that is outside of CCBK into the save system is to inherit from ExtraDataBehaviour. The default game manager finds all those in its awake Method.
 
