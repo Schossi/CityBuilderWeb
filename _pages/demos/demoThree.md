@@ -6,8 +6,7 @@ sidebar:
   nav: demos
 ---
 
-coming soon
-
-<!-- <iframe frameborder="0" src="https://itch.io/embed-upload/2175752?color=ffffff" allowfullscreen="" width="980" height="688"><a href="https://ididgame.itch.io/lignum-vitae">Play Lignum Vitae on itch.io</a></iframe>
-
-this is a demo that shows you what you can do -->
+<iframe frameborder="0" src="https://itch.io/embed-upload/3246447?color=333333" allowfullscreen="0" width="980" height="688"></iframe>  
+  
+  
+For an in depth breakdown of all the components please see the [Manual]({% link _pages/manual/demos/defense.md %})
