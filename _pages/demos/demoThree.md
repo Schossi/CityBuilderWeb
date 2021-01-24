@@ -12,7 +12,7 @@ A basic city builder created in full 3D.
   
 Buildings are rotated using the __R__ key. Migration is always balanced with employment so people will only come to your city if there are enough jobs.  
 
-For an in depth breakdown of all the components please see the [Manual]({% link _pages/manual/demos/defense.md %})  
+For an in depth breakdown of all the components please see the [Manual]({% link _pages/manual/demos/three.md %})  
 
 ## Walkthrough
 ### Settlement
