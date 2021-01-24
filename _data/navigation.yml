@@ -21,7 +21,7 @@ manual:
         url: /manual/defense
   - title: "How To"
     children:
-      - title: "City Builder from Scratch"
+      - title: "Start from Scratch"
         url: /manual/scratch
       - title: "Custom Systems"
         url: /manual/custom

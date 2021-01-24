@@ -1,6 +1,6 @@
 ---
 permalink: /manual/scratch
-title: "City Builder from Scratch"
+title: "Start from Scratch"
 sidebar:
   title: "Manual"
   nav: manual

@@ -27,13 +27,17 @@ Tests some core functionality of CityBuilderCore.
 Only import this if you plan to change CityBuilderCore and want to check if the basic systems still function.  
 
 * CityBuilderThree  
-contains the [3D City Builder]({% link _pages/demos/demoThree.md %}) demo  
+Contains the [3D City Builder]({% link _pages/demos/demoThree.md %}) demo  
 Import if you want to start by adapting this demo.  
 __For the menu to work add the Menu, StageOne, StageTwo, StageThree scenes in Build Settings.__
 
 * CityBuilderDefense  
-contains the [2D Tower Defense]({% link _pages/demos/demoThree.md %}) demo  
+Contains the [2D Tower Defense]({% link _pages/demos/demoThree.md %}) demo  
 Import if you want to start by adapting this demo.
+
+* CityBuilderManual  
+Holds the samples of the HowTo section of this manual.  
+Import only if you are following one of the how tos.
 
 * Settings  
 The different Unity Settings have to be imported if one of the demos is imported. This is primarily because of the Layers used. TODO CHECK 2D and Tests
