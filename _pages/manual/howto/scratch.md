@@ -365,7 +365,7 @@ Found in ContextMenu under Create/CityBuilder/Service
 Set Storage to FreeItemCapped Mode with Capacity 10 and ConsumptionInterval to 2  
 
 Start up the game and combine everything to evolve the housing to Cottages
-![Food](/assets/images/scratch/7Food.png)  
+![Evolution](/assets/images/scratch/8Evolution.png)  
 
 ## Saving
 
