@@ -36,8 +36,8 @@ Contains the [2D Tower Defense]({% link _pages/demos/demoThree.md %}) demo
 Import if you want to start by adapting this demo.
 
 * CityBuilderManual  
-Holds the samples of the HowTo section of this manual.  
-Import only if you are following one of the how tos.
+Holds completed samples of the HowTo section of this manual.  
+Import if you're stuck on a how to or exploring.
 
 * Settings  
 The different Unity Settings have to be imported if one of the demos is imported. This is primarily because of the Layers used. TODO CHECK 2D and Tests

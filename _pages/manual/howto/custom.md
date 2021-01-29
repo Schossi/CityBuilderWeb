@@ -8,7 +8,7 @@ sidebar:
 
 In this section i will walk you through creating a custom system in CCBK. The system itself is not especially useful but it contains implementations of all the most important parts of the framework.  
 
-A __completed playable__ version can be found in the Custom folder of the CityBuilderManual project within the CCBK asset. 
+A __completed, playable__ version can be found in the Custom folder of the CityBuilderManual project within the CCBK asset. 
 
 ## Building Component
 
