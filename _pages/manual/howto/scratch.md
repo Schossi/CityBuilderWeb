@@ -109,9 +109,8 @@ After selecting the tool and starting up the game you should now be able to draw
 ### Prefab
 {:.no_toc}
 * Create a Gameobject at 0,0,0 and call it 'WaterSupply' [^4]
-  * Create a 2D Object/Sprite at 0,0,0 and call it 'sprite'
+  * Create a 2D Object/Sprite at 1,1,0 and call it 'sprite'
     * Assign the waterSupply sprite and OrderInLayer 10
-    * move it to 1,1,0
   * Add a Building Component to WaterSupply and assign sprite as its Pivot
 * Create a Folder called 'Buildings' inside the City Folder
   * Drag the WaterSupply to the Folder to create a Prefab
@@ -144,10 +143,10 @@ Start up the game again and build some water supplies!
 ### Prefab
 {:.no_toc}
 * Create a Gameobject at 0,0,0 and call it 'WaterCarrier' 
-  * Create a child Gameobject at 0,0,0 and call it 'pivot'[^6]
-    * move it to 0.5,0.5,0
+  * Create a child Gameobject at 0.5,0.5,0 and call it 'pivot'[^6]
     * Create a 2D Object/Sprite at 0,0,0 and call it 'sprite'
       * Assign the waterCarrier sprite and OrderInLayer 20
+      * Set Z Rotation to 270
   * Add a ServiceWalker Component to WaterCarrier and assign pivot as its Pivot
     * Set PathType to Road
 * Create a Folder called 'Walkers' inside the City Folder
@@ -198,7 +197,7 @@ Whenever i mention creating a new walker do the following.
 
 ### Population Object
 {:.no_toc}
-* Create a Road Object in your City Folder  
+* Create a Population Object in your City Folder  
 Found in ContextMenu under Create/CityBuilder/Population
   * Set Key='POP' Name='Population'
 * On ObjectRepository assign Population
@@ -218,7 +217,7 @@ Found in ContextMenu under Create/CityBuilder/Population
 * Add a HousingPlaceholderComponent to H0
   * Assign H1 as the Prefab
 * Add a HousingComponent to H1,H2,H3
-  * In PopulationHousings add a single entry that uses the Population Object and the count below
+  * In PopulationHousings add a single entry that uses the Population Object and the counts 20, 35, 50
 
 ### Walkers
 {:.no_toc}
@@ -326,7 +325,6 @@ Build some farms and watch them grow. Connect them to a granary for the chickpea
 
 * Create a Layer Object in the City Folder and name it Water  
 Found in ContextMenu under Create/CityBuilder/Layer
-* On ObjectRepository assign Layer  
 * On Logic Add DefaultLayerManager
   * Create an Entry in AffectingTiles  
 assign the water tile, water layer and set value:10 Range:2 Falloff:0 
