@@ -1,5 +1,4 @@
 ---
-title: "coming soon"
 layout: splash
 header:
   image: /assets/images/splash.PNG
