@@ -54,12 +54,18 @@ plugins:
 
 footer:
   links:
+    - label: "SoftLeitner"
+      icon: "fas fa-home"
+      url: "https://softleitner.com/"
     - label: "Store"
       icon: "fab fa-fw fa-unity"
       url: "https://assetstore.unity.com/"
     - label: "Support"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:softleitner@gmail.com"
+    - label: "Coffee"
+      icon: "fas fa-coffee"
+      url: "https://www.buymeacoffee.com/softleitner"
 
 defaults:
   # _pages
