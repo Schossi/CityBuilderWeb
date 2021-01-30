@@ -2,7 +2,7 @@ main:
   - title: "Demos"
     url: /demos/three
   - title: "Manual"
-    url: /manual/
+    url: /manual
     
 demos:
   - title: "3D City Builder"
