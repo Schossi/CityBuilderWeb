@@ -23,7 +23,7 @@ This page covers only the first two evolutions, water and food. A completed vers
 
 * Create a new unity project using the 2D template
 * Import the CCBK Core Framework  
-![Import](/assets/images/scratch/1Import.png)
+![Import](/assets/images/scratch/1Import.PNG)
 * Place the [Manual Assets][1] inside your Assets folder
 
 [1]:{{ site.url }}/assets/downloads/manualAssets.zip
@@ -44,7 +44,7 @@ This page covers only the first two evolutions, water and food. A completed vers
   * Make sure your active Tilemap is 'Ground' and your Palette is 'historic'
   * Draw your map inside the guide lines of the map(turn on gizmos if you cant see it)
 
-![Ground](/assets/images/scratch/2Ground.png)  
+![Ground](/assets/images/scratch/2Ground.PNG)  
 We'll later add a water layer that spreads out two tiles from water. I' ve drawn grass tiles there to communicate that to the player.
 
 With all that done you can start the game for the first time. You should be able to move the Camera around the map while being confined to its bounds.
@@ -102,7 +102,7 @@ Found in the ContextMenu under Create/CityBuilder/Road
     * Add ToolsActivator.SetToolActive to the Toggles OnValueChanged event
 
 After selecting the tool and starting up the game you should now be able to draw roads on the map.  
-![Roads](/assets/images/scratch/3Roads.png)  
+![Roads](/assets/images/scratch/3Roads.PNG)  
 
 ## Buildings
 
@@ -136,7 +136,7 @@ Found in the ContextMenu under Create/CityBuilder/BuildingInfo)
 * Add a DefaultBuildingManager to Logic
 
 Start up the game again and build some water supplies!
-![Buildings](/assets/images/scratch/4Buildings.png)  
+![Buildings](/assets/images/scratch/4Buildings.PNG)  
 
 ## Walkers
 
@@ -165,7 +165,7 @@ Start up the game again and build some water supplies!
   * Assign Count=1 Reuse=1 Downtime=5
 
 As soon as a WaterSupply is connected to a road it should now spawn a WaterCarrier that roams around for a bit and then returns.
-![Walkers](/assets/images/scratch/5Walkers.png)  
+![Walkers](/assets/images/scratch/5Walkers.PNG)  
 * Change Variance on the Map to 0.2 and start the game again, walkers should now be offset a little bit to prevent overlapping
 
 ## Templates
@@ -246,7 +246,7 @@ Found in ContextMenu under Create/CityBuilder/Population
 * Move it between RoadTool and WaterTool
 
 Start the game, the HousingTool now builds placeholders that are turned into huts as soon as immigrants arrive.  
-![Housing](/assets/images/scratch/6Housing.png)  
+![Housing](/assets/images/scratch/6Housing.PNG)  
 
 ## Food
 
@@ -319,7 +319,7 @@ Found in ContextMenu under Create/CityBuilder/Item
 * Duplicate the WaterTool 3 times and assign the sprites and BuildingInfos of Farm, Granary and Bazaar
 
 Build some farms and watch them grow. Connect them to a granary for the chickpeas to be stored there. The Bazaar wont do anything because the seller wont find anyone in need of chickpeas yet.  
-![Food](/assets/images/scratch/7Food.png)  
+![Food](/assets/images/scratch/7Food.PNG)  
 
 ## Layer
 
@@ -363,7 +363,7 @@ Found in ContextMenu under Create/CityBuilder/Service
 Set Storage to FreeItemCapped Mode with Capacity 10 and ConsumptionInterval to 2  
 
 Start up the game and combine everything to evolve the housing to Cottages
-![Evolution](/assets/images/scratch/8Evolution.png)  
+![Evolution](/assets/images/scratch/8Evolution.PNG)  
 
 ## Saving
 
