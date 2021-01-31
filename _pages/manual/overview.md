@@ -39,9 +39,6 @@ Import if you want to start by adapting this demo.
 Holds completed samples of the HowTo section of this manual.  
 Import if you're stuck on a how to or exploring.
 
-* Settings  
-The different Unity Settings have to be imported if one of the demos is imported. This is primarily because of the Layers used.
-
 Both demos depend on either layers, tags or sorting layers. __If these settings were not set during import please copy the contents of TagManager.txt from the demo folder to the TagManager.asset in you ProjectSettings.__  
 
 ### Dependencies
