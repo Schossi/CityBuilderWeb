@@ -59,7 +59,7 @@ footer:
       url: "https://softleitner.com/"
     - label: "Store"
       icon: "fab fa-fw fa-unity"
-      url: "https://assetstore.unity.com/"
+      url: "https://assetstore.unity.com/packages/slug/187814"
     - label: "Support"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:softleitner@gmail.com"
