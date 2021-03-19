@@ -16,7 +16,7 @@ The kit was created with the classic evolve housing, build monuments type of gam
 
 ## Project Structure
 
-CCBK is separated into multiple assemblies. Which ones you need depends on how you are planning to use the Kit. For your first exploration create a new __Universal Render Pipeline__ project and remove the example assets and materials, then import the entire asset.
+CCBK is separated into multiple assemblies. Which ones you need depends on how you are planning to use the Kit. For your first exploration create a new project and remove the example assets and materials, then import the entire asset.
 
 * CityBuilderCore  
 The Core Framework of CCBK.  
@@ -26,7 +26,7 @@ Always import this one.
 Tests some core functionality of CityBuilderCore.  
 Only import this if you plan to change CityBuilderCore and want to check if the basic systems still function.  
 
-* CityBuilderThree(__URP__)  
+* CityBuilderThree  
 Contains the [3D City Builder]({% link _pages/demos/demoThree.md %}) demo  
 Import if you want to start by adapting this demo.  
 __For the menu to work add the Menu, StageOne, StageTwo, StageThree scenes in Build Settings.__
