@@ -9,6 +9,8 @@ demos:
     url: /demos/three
   - title: "2D Tower Defense"
     url: /demos/defense
+  - title: "2D City Sim"
+    url: /demos/urban
 
 manual:
   - title: "Overview"
@@ -19,6 +21,8 @@ manual:
         url: /manual/three
       - title: "2D Tower Defense"
         url: /manual/defense
+      - title: "2D City Sim"
+        url: /manual/urban
   - title: "How To"
     children:
       - title: "Start from Scratch"
