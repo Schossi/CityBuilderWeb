@@ -17,4 +17,4 @@ Art assets have been adapted from packs made by [Kenney](https://kenney.nl)
 
 For an in depth breakdown of all the components please see the [Manual]({% link _pages/manual/demos/defense.md %})
 
-![Defense Won](/assets/images/defense.png)
+![Defense Won](/assets/images/defense.PNG)

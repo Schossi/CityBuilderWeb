@@ -33,7 +33,7 @@ The farms have to be created on the fertile ground of the forrest. Create a side
 The market has to be built close to the housing so the roaming seller can reach the houses. The silo should probably be built somewhere in between.  
 If not enough people move into the housing you should build more farms. People will only immigrate if they have jobs in your city.
 
-![Settlement Mission Won](/assets/images/settlement.png)
+![Settlement Mission Won](/assets/images/settlement.PNG)
 ### Comfort
 Start this mission with the same basic setup as the previous one.  
 You will need to evolve housing to its highest level to generate taxes.  
@@ -46,7 +46,7 @@ For the entertainers to actually perform build some stages close to the housing 
 
 As soon as your housing is evolved into palaces you can build a tax collector and watch the money roll in.
 
-![Comfort Mission Won](/assets/images/comfort.png)
+![Comfort Mission Won](/assets/images/comfort.PNG)
 
 ### Monument
 
@@ -64,4 +64,4 @@ to function a labour camp needs tools
 masons work the granite at the building site
 * granite mine 
 
-![Monument Mission Won](/assets/images/monument.png)
+![Monument Mission Won](/assets/images/monument.PNG)
