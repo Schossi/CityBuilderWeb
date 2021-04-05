@@ -1,7 +1,7 @@
 ---
 layout: splash
 header:
-  image: /assets/images/splash.PNG
+  image: /assets/images/BannerSmall.PNG
 ---
 
 ![Logo](/assets/images/logo.png)
