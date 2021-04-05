@@ -27,7 +27,8 @@ simply use MultiRoadManager instead of DefaultRoadManager
 > rails and roads in urban demo
 - __structures__ now support multiple levels  
 easily control which levels a structure inhabits using the level toggles
-> a single point in the urban demo can have a pipe, road and power line; pumps inhabit all three levels
+> a single point in the urban demo can have a pipe, road and power line; pumps inhabit all three levels  
+- new __view__ type that displays building efficiency
 
 ### CHANGED
 
@@ -40,6 +41,7 @@ easily control which levels a structure inhabits using the level toggles
 - building walkers not triggering on spawn
 - panning in xy isometric maps
 - speed controls in historic demo
+- ...
 
 ## 0.9.0
 
