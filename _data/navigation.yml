@@ -15,6 +15,9 @@ demos:
 manual:
   - title: "Overview"
     url: /manual
+    children:
+      - title: "Release Notes"
+        url: /manual/releases
   - title: "Demos"
     children:
       - title: "3D City Builder"
