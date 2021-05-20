@@ -11,7 +11,7 @@ sidebar:
 ### ADDED
 
 - __Setup Wizard__ window  
-creates a clean project template with placeable buildings 
+creates a clean project template with placeable buildings  
 configure display modes, axis, sizes, ... in a simple dialog
 - __Expandable Buildings__  
 building size is determined during building  
