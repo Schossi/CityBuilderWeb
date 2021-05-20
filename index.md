@@ -31,8 +31,9 @@ Originally created with the classic *evolve housing, build monuments type game* 
 ## Feature Highlights
 
 * __Beginner__ friendly Editor based Workflow
+* __Setup Wizard__ that gets you from zero to placing buildings and roads in seconds
 * Consistent __Saving__ Mechanism using JSON
-* Modular __Buildings__ consisting of persistent components and temporary parts
+* Modular __Buildings__ consisting of persistent components and temporary addons
 * Flexible __Walkers__ with configurable pathfinding modes
 * __Extendable__ through a simple, minimal dependency container
 
