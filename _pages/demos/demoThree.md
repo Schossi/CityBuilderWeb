@@ -10,8 +10,10 @@ A basic city builder created in full 3D.
 
 <iframe frameborder="0" src="https://itch.io/embed-upload/3246447?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
   
-Buildings are rotated using the __R__ key. Migration is always balanced with employment so people will only come to your city if there are enough jobs.  
-
+Buildings are rotated using the __R__ key. The camera is rotated using __Q__ and __E__, use __mouse wheel__ to zoom and __hold shift__ to pitch.  
+  
+Migration is always balanced with employment so people will only come to your city if there are enough jobs. Bridges need a road to be placed on both sides before they can be built. Stages can only be placed on grey Streets that have been improved by increasing desirability.  
+  
 For an in depth breakdown of all the components please see the [Manual]({% link _pages/manual/demos/three.md %})  
 
 ## Walkthrough
