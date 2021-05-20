@@ -6,6 +6,43 @@ sidebar:
   nav: manual
 ---
 
+## 1.1.0
+
+### ADDED
+
+- __Setup Wizard__ window  
+creates a clean project template with placeable buildings 
+configure display modes, axis, sizes, ... in a simple dialog
+- __Expandable Buildings__  
+building size is determined during building  
+expand building in one or two dimensions  
+showcased in the new bridge building of THREE demo
+- enhanced __Full 3D__ support  
+showcased in new 3D demo scene in THREE demo  
+support for perspective camera and 3D roads  
+height parameter in walkers can modify their display  
+(move along terrain or change to different layer in tunnel) 
+- __Road Switching__  
+allows destination walkers to move between road networks  
+showcased in SwitchRoadDebugging scene in tests and tunnel scene in urban demo   
+
+### IMPROVED
+
+- __Building Requirements__ now support various modes and configurations  
+- __Road Requirements__ can now be configured to amend missing roads  
+- __Cell Size__ of grid is taken into account in default and isometric map
+
+### CHANGED
+
+- RoadBuilding functionality has been merged into regular Buildings
+
+### FIXED
+
+- incorrect camera area when camera was pitched enough to look up
+- structure level editor not working inside arrays
+- monument pathing when using worker pooling
+- ...
+
 ## 1.0.0
 
 ### ADDED
