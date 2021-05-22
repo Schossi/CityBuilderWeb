@@ -8,7 +8,7 @@ sidebar:
 
 A basic city builder created in full 3D.
 
-<iframe frameborder="0" src="https://itch.io/embed-upload/3246447?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
+<iframe frameborder="0" src="https://itch.io/embed-upload/3872729?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
   
 Buildings are rotated using the __R__ key. The camera is rotated using __Q__ and __E__, use __mouse wheel__ to zoom and __hold shift__ to pitch.  
   
