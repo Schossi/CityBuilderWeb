@@ -53,6 +53,7 @@ Play it [here]({% link _pages/demos/demoThree.md %}), uses pretty much every sys
 |![Stage](/assets/images/three/buildings/stage.png)               |__Stage__          |WorkerUserComponent<br/>LayerAffectorWorking|Worker: Entertainer Quantity: 1 Queue: 2 Duration: 20<br/>Layer: Entertainment Value: 100 Range: 10|
 |![Garden](/assets/images/three/buildings/garden.png)             |__Garden__         |LayerAffector|Layer: Desirability Value: 10 Range: 3 Falloff: 3|
 |![RoadBlocker](/assets/images/three/buildings/roadBlocker.png)   |__Road Blocker__   |HousingComponent|Health: 100|
+|![Bridge](/assets/images/three/buildings/bridge.png)   |__Bridge__   |||
 
 ## Structures
 
