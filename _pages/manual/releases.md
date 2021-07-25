@@ -6,6 +6,41 @@ sidebar:
   nav: manual
 ---
 
+## 1.2.0
+
+### Added
+
+- __Overview Windows__ for Buildings, Walkers and Items  
+these display all the objects in a set with preview images  
+objects can be filtered, cloned and deleted 
+
+### IMPROVED
+
+- __Complete visual overhaul of 3D City Builder Demo__  
+  - __25 Original Low Poly Buildings__
+  - Humanoid Walkers with Animations
+  - Maps, Props, Materials, Effects, ...
+- Updated "Start from Scratch" Tutorial
+  - Incorporates new Setup and Overview Windows
+  - New sprites for Buildings and Walkers
+
+### CHANGED
+
+- Common walker properties have been moved to WalkerInfo  
+PathTyp, PathTag, Speed, MaxWait, Delay
+
+### FIXED
+
+- Expandable buildings not loading their expansion
+- Buildings having wrong scale after being affected by BuildingAddonTransformer  
+this lead to buildings in the three demo always being slightly off scale or very off scale when the framerate was low
+- Roads for Bridge being amended without rotation
+- Path Recalculation for moving walkers in Defense Demo
+- Roads being demolished when their RoadBlocker was demolished  
+Roads are "underlying" and therefore only demolished when no non "underlying" structure is demolished at the same time
+- Pooled walkers retaining their items and state
+- ...
+
 ## 1.1.0
 
 ### ADDED
