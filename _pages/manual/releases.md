@@ -8,7 +8,7 @@ sidebar:
 
 ## 1.2.0
 
-### Added
+### ADDED
 
 - __Overview Windows__ for Buildings, Walkers and Items  
 these display all the objects in a set with preview images  
