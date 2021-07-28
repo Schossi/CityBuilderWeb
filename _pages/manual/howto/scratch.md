@@ -67,7 +67,7 @@ When you start the game now you should be able to draw some nice connecting road
   * Replace its Background Image with HTWaterSupply
   * Click the BuildingInfo on the BuildingBuilder to select it in the ProjectView
     * Rename the BuildingInfo to WaterSupplyInfo
-    * Key > 'WAT' ; Name > 'Water Supply'
+    * Key > 'WAT' ; Name > 'WaterSupply'
   * Rename the Building Prefab to WaterSupply and open it
     * Remove the WalkerSpawner Component
     * On the SpriteRenderer of the Sprite Object set HTWaterSupply as the Sprite
@@ -107,10 +107,10 @@ You should now be able to place Water Supplies but only directly next to Water T
 * Create an Empty Gameobject in your Scene
   * Reset its Position
   * Name it WheatVisual
-  * Drag the Sprites HTWheat1-4 from Project View onto WheatVisual
-    * Order In Layer > 100
+  * Drag the Sprites HTWheatG1-4 from Project View onto WheatVisual
+    * Order In Layer > 15
   * Add a StorageQuantity Visual to WheatVisual
-    * Swap > TRUE ; Objects > HTWheat1-4
+    * Swap > TRUE ; Objects > HTWheatG1-4
   * Drag WheatVisual into the Items folder and delete it from the Scene
 * Create an Item(RMB>Create/CityBuilder/Item) named 'Wheat'
   * Key > 'WHT' ; Name > 'Wheat' ; UnitSize > 100
@@ -142,7 +142,7 @@ You should now be able to place Water Supplies but only directly next to Water T
       * Storage Mode > Free Unit Capped ; Capacity > 1
     * DeliveryWalkers Prefab > CartPusher
   * Drag the Sprites HTFarmProgress1-4 from Project View onto Sprite
-    * Reset the Positions and set Order In Layer > 100
+    * Reset the Positions and set Order In Layer > 15
   * Add ProgressThresholdVisualizer
     * Component > ProductionComponent ; Swap > TRUE
     * Add 4 Elements to Progress Thresholds
@@ -180,7 +180,7 @@ You should now be able to build Farms that visualize their progress and spawn wa
 
 The Farms Cart Pushers should now carry the Wheat to the Granary. The quantity stored in a Granary should be properly visualized.
 
-### WBuyer & Seller
+### Buyer & Seller
 
 * Open up the Walkers Window(Window/CityBuilder/Walkers)
 * Copy WaterCarrier and call the new Walker 'BazaarBuyer'
@@ -215,336 +215,76 @@ The Farms Cart Pushers should now carry the Wheat to the Granary. The quantity s
 
 The Bazaar will do nothing but spawn Sellers for now. It will only send out Buyers once a Seller has reported that Buildings on its path need Wheat.
 
-## Housing
+## Peasants
 
-## Evolution
+### Housing
 
-### Tilemap
-{:.no_toc}
-* Create a child Gameobject in Map at 0,0,0 and call it 'Roads'
-  * Add Tilemap and TilemapRenderer to it
-    * Set OrderInLayer to 1
-  * Add a DefaultRoadManager Component
-* Create a child Gameobject in Map at 0,0,0 and call it 'Highlights'
-  * Add Tilemap and TilemapRenderer to it
-    * Set OrderInLayer to 2
-  * Add a DefaultHighlightManager to it
-    * Assign the Highlight Tiles of the same name  
+* Create a Population(RMB>Create/CityBuilder/Population) in the City folder named 'PeasantPopulation'
+  * Key > 'PST' ; Name > 'Peasant'
 
-### Logic
-{:.no_toc}
+* Open up the Buildings Window(Window/CityBuilder/Walkers)
+* Copy Bazaar with Key > H1 ; Name > H1Hut
+* Open the Prefab by double clicking the preview image
+  * Sprite > HTHut
+  * Remove DistributionComponent
+  * Add HousingComponent
+    * Add a Population Housing entry with Population > PeasantPopulation ; Quantity > 20
 
-* Create a Gameobject at 0,0,0 and call it 'Logic' and add the following Components
-  * DefaultGameManager
-  * ObjectRepository
-  * DefaultStructureManager
+* Copy H1Hut with Key > H2 ; Name > H2Shanty
+* Open the Prefab by double clicking the preview image
+  * Sprite > HTShanty
+  * Quantity > 35
 
-### Road Object
-{:.no_toc}
-* Create a Folder in your Assets called City
-  * Create a Road Object  
-Found in the ContextMenu under Create/CityBuilder/Road
-  * Add a single stage to it by assigning 1 to Stages-Size
-    * Assign 'ROD' to the Key [^3]
-    * Assign the 'road' tile to Tile
-* On ObjectRepository assign Road
+* Copy H1Hut with Key > H3 ; Name > H3Cottage
+* Open the Prefab by double clicking the preview image
+  * Sprite > HTCottage
+  * Quantity > 50
 
-### UI Tools
-{:.no_toc}
-* Create a UI/Panel and call it 'Tools'
-  * Move it to middle-right with a width of 50
-  * Add a VerticalLayoutGroup and a ContentSizeFitter with verticalFit=Preferred
-  * Add a ToggleGroup with AllowSwitchOff=1 and a ToolsManager Component
-    * Assign the ToggleGroup in the ToolsManager
-  * Create a UI/Toggle in Tools and call it 'RoadTool'
-    * Delete the Text
-    * Resize the Toggle to 50,50
-    * Assign the ToggleGroup
-    * Set the Toggles IsOn to false
-    * Move Background and Checkmark to middle-center with size 32,32
-    * Assign toolsBorder as the Checkmark image and blank as the Background
-    * Add a RoadBuilder and ToolsActivator Component to RoadTool
-      * Assign the Road Object you just created in the Road field
-    * Add ToolsActivator.SetToolActive to the Toggles OnValueChanged event
+* Copy H1Hut with Key > H0 ; Name > H0Property
+* Open the Prefab by double clicking the preview image
+  * Sprite > HTHousing
+  * Remove HousingComponent
+  * Add HousingPlaceholderComponent with Prefab > H1Hut
 
-After selecting the tool and starting up the game you should now be able to draw roads on the map.  
-![Roads](/assets/images/scratch/3Roads.PNG)  
+* Back in the Scene find WaterSupplyTool(UI/Tools) and clone it
+  * Rename it to HousingTool
+  * BuildingBuilder BuildingInfo > H0PropertyInfo
+  * Background Image > HTHut
 
-## Buildings
+### Migration
 
-### Prefab
-{:.no_toc}
-* Create a Gameobject at 0,0,0 and call it 'WaterSupply' [^4]
-  * Create a 2D Object/Sprite at 1,1,0 and call it 'sprite'
-    * Assign the waterSupply sprite and OrderInLayer 10
-  * Add a Building Component to WaterSupply and assign sprite as its Pivot
-* Create a Folder called 'Buildings' inside the City Folder
-  * Drag the WaterSupply to the Folder to create a Prefab
-  * Remove the WaterSupply from the Scene
+* Open up the Walkers Window(Window/CityBuilder/Walkers)
+* Copy WaterCarrier and call the new Walker 'Immigrant'
+  * Open the Info by double clicking the entry
+    * PathType > MapGrid
+  * Open the Prefab by double clicking the preview image
+    * Replace the ServiceWalker Script with ImmigrationWalker
+    * Capacity > 10
+* Copy Immigrant and call the new Walker 'Emigrant'
+  * Open the Prefab by double clicking the preview image
+    * Replace the ImmigrationWalker Script with EmigrationWalker
+* On the Logic Object in the Scene add a Migration Component
+  * Immigration Walkers Prefab > Immigrant ; Count > 10
+  * Emigration Walkers Prefab > Emigrant ; Count > 10
+  * Entry > Logic ; Population > PeasantPopulation
+* On the Logic Object add a DefaultPopulationManager
 
-### Buildinginfo
-{:.no_toc}
-* Create a BuildingInfo Object called 'WaterSupply' in Buildings  
-Found in the ContextMenu under Create/CityBuilder/BuildingInfo)
-  * Assign Key='WAT' Name='water supply' and Size=2,2
-  * Assign the Prefab we just created
-* On the WaterSupply Prefab assign the BuildingInfo
+When you start the game now and build Housing the Migration should spawn Immigrants that occupy the properties and turn them into Huts.
 
-### Tool
-{:.no_toc}
-* Duplicate the RoadTool we've created in the previous chapter and call it 'WaterTool'
-  * Replace the RoadBuilder with a BuildingBuilder [^5]
-    * Assign the WaterSupply BuildingInfo to the BuildingBuilder
-  * Set the Background image to waterSupply and reset the color to white
+### Evolution
 
-### Logic
-{:.no_toc}
-* Add a DefaultBuildingManager to Logic
+* Create an EvolutionSequence(RMB>Create/CityBuilder/EvolutionSequence) in the City folder named 'HousingEvolution'
+  * 0 Building Info > H1HutInfo
+  * 1 Building Info > H2ShantyInfo    Services > WaterService
+  * 2 Building Info > H3CottageInfo   Items > Wheat
 
-Start up the game again and build some water supplies!
-![Buildings](/assets/images/scratch/4Buildings.PNG)  
+* Add Evolution Components to H1Hut, H2Shanty and H3Cottage with
+  * Evolution Sequence > HousingEvolution
+  * ServiceRecipient
+    * Service > WaterService ; Loss Per Second > 5
+  * ItemsRecipient(only H2 and H3)
+    * Item > Wheat ; Consumption Interval > 2
+    * Storage > Free Item Capped ; Capacity > 10
 
-## Walkers
-
-### Prefab
-{:.no_toc}
-* Create a Gameobject at 0,0,0 and call it 'WaterCarrier' 
-  * Create a child Gameobject at 0.5,0.5,0 and call it 'pivot'[^6]
-    * Create a 2D Object/Sprite at 0,0,0 and call it 'sprite'
-      * Assign the waterCarrier sprite and OrderInLayer 20
-      * Set Z Rotation to 270
-  * Add a ServiceWalker Component to WaterCarrier and assign pivot as its Pivot
-    * Set PathType to Road
-* Create a Folder called 'Walkers' inside the City Folder
-  * Drag the WaterCarrier to the Folder to create a Prefab
-  * Remove the WaterCarrier from the Scene
-
-### Walkerinfo
-{:.no_toc}
-* Create a WalkerInfo Object called 'WaterCarrier' in Walkers (found in the ContextMenu under Create/CityBuilder/WalkerInfo)
-  * Assign Name='water carrier'
-* On the WaterCarrier Prefab assign the WalerInfo
-
-### Spawning
-{:.no_toc}
-* On the WaterSupply Prefab add a ServiceWalkerComponent Component[^7]
-  * Assign Count=1 Reuse=1 Downtime=5
-
-As soon as a WaterSupply is connected to a road it should now spawn a WaterCarrier that roams around for a bit and then returns.
-![Walkers](/assets/images/scratch/5Walkers.PNG)  
-* Change Variance on the Map to 0.2 and start the game again, walkers should now be offset a little bit to prevent overlapping
-
-## Templates
-
-Since we will be creating a number of Buildings and Walkers in the following Chapters let's create blank templates for them that we can easily duplicate.[^4]
-* Duplicate WaterSupply Prefab and Info
-  * rename them both to 'Building'
-  * clear out key, name and prefab in info
-  * clear out info and sprite in prefab
-  * remove the ServiceWalkerComponent
-* Duplicate WaterCarrier Prefab and Info
-  * rename them both to 'Walker'
-  * clear out name in info
-  * clear out info and sprite in prefab
-  * remove the ServiceWalker
-
-From now on whenever i mention creating a new building do the following.
-* Duplicate Building Prefab and Info
-* Set prefab, key and name in info
-* Set info and sprite in prefab
-
-Whenever i mention creating a new walker do the following.
-* Duplicate Walker Prefab and Info
-* Add whatever Walker Component is needed
-* Set name in info
-* Set info and sprite in prefab
-
-## Housing
-
-### Population Object
-{:.no_toc}
-* Create a Population Object in your City Folder  
-Found in ContextMenu under Create/CityBuilder/Population
-  * Set Key='POP' Name='Population'
-* On ObjectRepository assign Population
-
-### Buildings
-{:.no_toc}
-
-* Create Buildings
-
-|name|info-key|info-name|sprite|
-|----|----|----|----|
-|H0|HNO|housing|housing|
-|H1Hut|HUT|hut|hut|
-|H2Shanty|SHT|shanty|shanty|
-|H3Cottage|CTG|cottage|cottage|
-
-* Add a HousingPlaceholderComponent to H0
-  * Assign H1 as the Prefab
-* Add a HousingComponent to H1,H2,H3
-  * In PopulationHousings add a single entry that uses the Population Object and the counts 20, 35, 50
-
-### Walkers
-{:.no_toc}
-
-* Create Immigrant Walker
-  * Add ImmigrationWalker Component
-    * Name: immigrant Sprite: migrant
-    * Set PathType to MapGrid
-    * Set Capacity to 10
-
-### Logic
-{:.no_toc}
-
-* Add DefaultPopulationManager to Logic
-* Add a Migration to Logic
-  * Assign the ImmigrationWalker and set the count to 100
-  * Set Logic as the Entry
-  * Assign the Population Object
-
-### Tool
-{:.no_toc}
-
-* Duplicate the WaterTool and name it HousingTool
-* Assign H0 as the Building
-* Use the hut sprite as the Background
-* Move it between RoadTool and WaterTool
-
-Start the game, the HousingTool now builds placeholders that are turned into huts as soon as immigrants arrive.  
-![Housing](/assets/images/scratch/6Housing.PNG)  
-
-## Food
-
-### Items
-{:.no_toc}
-
-* Create a Folder called 'Items' inside the City Folder
-* Create an Item Object in the Items Folder  
-Found in ContextMenu under Create/CityBuilder/Item
-  * Set Key='CHK' Name='chickpeas' UnitSize=100 Icon=chickpeas
-* On ObjectRepository assign Item  
-
-* Create a Gameobject at 0,0,0 and call it 'Chickpeas'
-  * Set scale to 0.65,0.65,1
-  * Create 4 Sprites with OrderInLayer 30 and assign the chickpeas1-4 sprites
-  * Add a StorageQuantityVisual
-    * Set Swap to true
-    * Add the sprites to the Objects array
-* Drag Chickpeas to the Items Folder and remove it from the scene
-* Add it to the Chickpeas-Item Visuals
-
-### Walkers
-{:.no_toc}
-
-|name|info-name|sprite|component|settings
-|----|----|----|----|----|
-|CartPusher|cart pusher|cartPusher|DeliveryWalker|PathType:Road|
-|BazaarBuyer|bazaar buyer|bazaarBuyer|PurchaseWalker|PathType:Road Capacity:3|
-|BazaarSeller|bazaar seller|bazaarSeller|SaleWalker|PathType:RoadBlocked|
-
-### Buildings
-{:.no_toc}
-
-|name|info-key|info-name|sprite|
-|----|----|----|----|
-|Farm|FAM|farm|farm|
-|Granary|GRN|granary|granary|
-|Bazaar|BAZ|bazaar|bazaar|  
-
-* Granary and Farm are larger buildings so we'll have to adjust size and pivot position
-  * Farm size:3x3 pivot:1.5,1.5,0
-  * Granary size:4x4 pivot:2,2,0
-* Farm
-  * Add a ProductionComponent
-    * Set Interval to 20
-    * Assign the CartPusher as Prefab in DeliveryWalkers
-    * Create an entry in ItemsProducers
-      * Set Item to Chickpeas and Quantity to 100
-      * Set Storage to FreeUnityCapped with Capacity:1
-  * Add a ProgressThresholdVisualizer 
-    * Create 4 Sprites under sprite with OrderInLayer:100 and assign farmProgress1-4 sprites
-    * Create 4 entries in ProgressThresholds with the above sprites and the thresholds: 0.2, 0.4, 0.6, 0.8
-
-* Granary
-  * Add a StorageComponent
-    * Set Storage to Stacked Mode with 8 Stacks and 4 Capacity
-    * Create an entry in Orders for Chickpeas with Ratio:1
-  * Add a StorageQuantityVisualizer to Granary
-    * Create 8 Transforms and move them over the centers of the holes in the sprite
-    * Add them to the Origins array
-
-* Bazaar
-  * Add a DistributionComponent
-    * Set Storage to FreeUnitCapped with Capacity 5
-    * Create an entry in Orders for Chickpeas with Ratio:1
-    * Assign the BazaarBuyer as Prefab in PurchaseWalkers
-    * Assign the BazaarSeller as Prefab in SaleWalkers with Reuse:1 and Downtime:5
-<br/><br/><br/>
-* Add DefaultItemManager to Logic and set Storage to Free Mode
-* Duplicate the WaterTool 3 times and assign the sprites and BuildingInfos of Farm, Granary and Bazaar
-
-Build some farms and watch them grow. Connect them to a granary for the chickpeas to be stored there. The Bazaar wont do anything because the seller wont find anyone in need of chickpeas yet.  
-![Food](/assets/images/scratch/7Food.PNG)  
-
-## Layer
-
-* Create a Layer Object in the City Folder and name it Water  
-Found in ContextMenu under Create/CityBuilder/Layer
-* On Logic Add DefaultLayerManager
-  * Create an Entry in AffectingTiles  
-assign the water tile, water layer and set value:10 Range:2 Falloff:0 
-* In the BuildingInfos of Farm and WaterSupply add a LayerRequirement entry
-  * Set Layer:Water Min:5 Max:100
-
-Farms and WaterSupplies can now only be built close to water.
-
-## Evolution
-
-### Water Service
-{:.no_toc}
-
-* Create a Folder called 'Services' inside the City Folder
-* Create a Service Object in the Services Folder and name it Water  
-Found in ContextMenu under Create/CityBuilder/Service
-* In the WaterCarrier Walker Prefab assign the Water Service
-
-### Evolution Sequence
-{:.no_toc}
-
-* Create an EvolutionSequence Object in the City Folder  
-Found in ContextMenu under Create/CityBuilder/Service
-* Add the following Stages
-  * BuildingInfo: H1Hut
-  * BuildingInfo: H2Shanty  Services: Water
-  * BuildingInfo: H3Cottage Items: Chickpeas
-
-### Evolution Component
-{:.no_toc}
-
-* Add an EvolutionComponent to all 3 Housing Buildings(H1, H2, H3)
-* Assign the EvolutionSequence
-* Add a ServiceRecipient for Water to all 3 with a Loss of 5
-* Add an ItemsRecipient for Chickpeas to H2 and H3  
-Set Storage to FreeItemCapped Mode with Capacity 10 and ConsumptionInterval to 2  
-
-Start up the game and combine everything to evolve the housing to Cottages
-![Evolution](/assets/images/scratch/8Evolution.PNG)  
-
-## Saving
-
-* Create a BuildingInfoSet Object in the Buildings Folder  
-Found in ContextMenu under Create/CityBuilder/Sets/BuildingInfoSet
-* On ObjectRepository assign Buildings with it.  
-
-Thats all we were missing for saving and loading. In the absence of any UI you can use the In-Editor Buttons on Logic/DefaultGameManager to save and load.
-
-<br/><br/>
-
-[^1]: CCBK supports XYZ and XZY swizzles, the default XYZ is good for 2D 
-[^2]: blocking and ground are needed later to prevent walking and building on water 
-[^3]: keys have to be unique within their category, they are mostly used for saving 
-[^4]: the completed project uses a tree of prefab variants for buildings(skipped here for brevity)
-[^5]: switch the inspector to debug and select the other script, switch inspector back to normal 
-[^6]: sprite is a separate object in this one because is drew the walkers in the wrong direction and they have to be rotated
-[^7]: i know
+Your Huts should now turn into Shanty when a Water Carrier passes them.
+Once a BazaarSeller provides them with Wheat they should turn into Cottages.
