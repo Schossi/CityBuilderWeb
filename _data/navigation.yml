@@ -11,6 +11,8 @@ demos:
     url: /demos/defense
   - title: "2D City Sim"
     url: /demos/urban
+  - title: "2D City Builder"
+    url: /demos/two
 
 manual:
   - title: "Overview"
@@ -28,8 +30,8 @@ manual:
         url: /manual/urban
   - title: "How To"
     children:
-      - title: "Start from Scratch"
-        url: /manual/scratch
+      - title: "2D City Builder"
+        url: /manual/two
       - title: "Custom Systems"
         url: /manual/custom
   - title: "General"

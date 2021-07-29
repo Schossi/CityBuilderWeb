@@ -54,7 +54,7 @@ Is one of the demos close enough to what you are trying to achieve? Great!
 Import it along with CityBuilderCore and the Settings and start tweaking. The content of the demos is explained in detail in the [3D City Builder]({% link _pages/manual/demos/three.md %}) and [2D Tower Defense]({% link _pages/manual/demos/defense.md %}) manual pages. 
 
 * Starting from Scratch using Core Logic  
-If none of the demos gets close enough to what you want to make or you want to make sure you understand every piece of your project starting from scratch is the way to go. [Continue Here]({% link _pages/manual/howto/scratch.md %}) for a step to step guide to creating a city builder purely in Unity Editor or get a head start using the __Setup Wizard__ in Windows/City Builder/Setup.
+If none of the demos gets close enough to what you want to make or you want to make sure you understand every piece of your project starting from scratch is the way to go. [Continue Here]({% link _pages/manual/howto/two.md %}) for a step to step guide to creating a city builder purely in Unity Editor.
 
 * Implementing Custom Logic  
 Need some special sauce in your game and know basic C#. [Continue Here]({% link _pages/manual/howto/custom.md %}) for a step to step guide to extending CCBK with your own components and systems.
