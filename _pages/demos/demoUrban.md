@@ -8,7 +8,7 @@ sidebar:
 
 A simple city sim created in isometric 2d.
 
-<iframe frameborder="0" src="https://itch.io/embed-upload/3872807?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
+<iframe frameborder="0" src="https://itch.io/embed-upload/4230583?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
   
 Build and expand a little town.  
 Start small or you'll run out of money before you have steady income.  
