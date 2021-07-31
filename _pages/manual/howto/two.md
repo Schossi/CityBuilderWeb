@@ -27,7 +27,8 @@ This page covers only the first two evolutions, water and food. A completed vers
 * Import TMP Essential Resources (Windows/TextMeshPro/...)
 * Import the CCBK Core Framework  
 
-![Import](/assets/images/scratch/Import.PNG)
+![Import](/assets/images/scratch/Import.PNG)  
+<sub>(Import the Asset normally, the video imports a custom package because it was made pre release)</sub>
 * Generate a basic Sprite based Game (Window/CityBuilder/Setup)  
 
 ![Import](/assets/images/scratch/Setup.PNG)
@@ -267,7 +268,6 @@ The Bazaar will do nothing but spawn Sellers for now. It will only send out Buye
     * Capacity > 10
 * Copy Immigrant and call the new Walker 'Emigrant'
   * Open the Prefab by double clicking the preview image
-    * Sprite > HTMigrantD1 ; Animator > HTMigrant
     * Replace the ImmigrationWalker Script with EmigrationWalker
 * On the Logic Object in the Scene add a Migration Component
   * Immigration Walkers Prefab > Immigrant ; Count > 10
@@ -294,3 +294,4 @@ When you start the game now and build Housing the Migration should spawn Immigra
 
 Your Huts should now turn into Shanty when a Water Carrier passes them.
 Once a BazaarSeller provides them with Wheat they should turn into Cottages.
+You might want to give yourself some more gold by increasing the Quantity in DefaultItemManager(Logic).
