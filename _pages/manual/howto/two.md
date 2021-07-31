@@ -89,6 +89,7 @@ When you start the game now you should be able to draw some nice connecting road
     * UnityAnimatorEventVector (Parameter > 'direction' ; Set Y > TRUE)
 * Rename WalkerInfo(City/Walkers) to 'WaterCarrierInfo'
 * Rename the Walker Prefab to WaterCarrier and open it
+  * Sprite > HTCarrierD1 ; Animator > HTCarrier
   * Replace the RoamingWalker Script with a ServiceWalker
     * Service > WaterService ; Amount > 1000
     * Hook WalkingChanged up to SetBool on the UnityAnimatorEvent(Sprite)
@@ -122,6 +123,7 @@ You should now be able to place Water Supplies but only directly next to Water T
 * Open up the Walkers Window(Window/CityBuilder/Walkers)
 * Copy WaterCarrier and call the new Walker 'CartPusher'
   * Open the Prefab by double clicking the preview image
+  * Sprite > HTPusherD1 ; Animator > HTPusher
   * Replace the ServiceWalker Script with DeliveryWalker
 
 ### Farm
@@ -185,12 +187,14 @@ The Farms Cart Pushers should now carry the Wheat to the Granary. The quantity s
 * Open up the Walkers Window(Window/CityBuilder/Walkers)
 * Copy WaterCarrier and call the new Walker 'BazaarBuyer'
   * Open the Prefab by double clicking the preview image
+    * Sprite > HTBuyerD1 ; Animator > HTBuyer
     * Replace the ServiceWalker Script with PurchaseWalker
     * Storage Capacity > 3
 * Copy WaterCarrier and call the new Walker 'BazaarSeller'
   * Open the Info by double clicking the entry
     * PathType > RoadBlocked
   * Open the Prefab by double clicking the preview image
+    * Sprite > HTSellerD1 ; Animator > HTSeller
     * Replace the ServiceWalker Script with SaleWalker
 
 ### Bazaar
@@ -258,10 +262,12 @@ The Bazaar will do nothing but spawn Sellers for now. It will only send out Buye
   * Open the Info by double clicking the entry
     * PathType > MapGrid
   * Open the Prefab by double clicking the preview image
+    * Sprite > HTMigrantD1 ; Animator > HTMigrant
     * Replace the ServiceWalker Script with ImmigrationWalker
     * Capacity > 10
 * Copy Immigrant and call the new Walker 'Emigrant'
   * Open the Prefab by double clicking the preview image
+    * Sprite > HTMigrantD1 ; Animator > HTMigrant
     * Replace the ImmigrationWalker Script with EmigrationWalker
 * On the Logic Object in the Scene add a Migration Component
   * Immigration Walkers Prefab > Immigrant ; Count > 10
