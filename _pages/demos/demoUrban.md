@@ -6,7 +6,8 @@ sidebar:
   nav: demos
 ---
 
-A simple city sim created in isometric 2d.
+A simple city sim created in isometric 2d.  
+<sup>Sprites adapted from art by [opengameart.org/users/pixel32](https://opengameart.org/users/pixel32) under CC0</sup>
 
 <iframe frameborder="0" src="https://itch.io/embed-upload/4230583?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
   

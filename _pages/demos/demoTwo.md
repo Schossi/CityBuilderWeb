@@ -6,7 +6,8 @@ sidebar:
   nav: demos
 ---
 
-A simple city builder created in top down 2d.
+A simple city builder created in top down 2d.  
+<sup>Sprites made by [fiverr.com/brenuuu](https://www.fiverr.com/brenuuu) as part of CCBK</sup>
 
 <iframe frameborder="0" src="https://itch.io/embed-upload/4237786?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
   
