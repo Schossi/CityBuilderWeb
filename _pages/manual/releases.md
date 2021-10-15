@@ -6,6 +6,27 @@ sidebar:
   nav: manual
 ---
 
+## 1.3.0
+
+### ADDED
+
+- __Timings__ system (events, animations and text based on playtime)
+- __Hexagon__ support in Setup, Map, ...
+- Hexagon Road Tiles
+- Decorator Structures that save rotations and sizes
+- Object Generator for easy map object generation
+
+### IMPROVED
+
+- FireWalker in Three Demo now actively walks to and extinguishes fires
+- BuildingRequirement can now require Buildings(see BuildingRequirementDebugging)
+- DefaultGameManager now saves the current randomization state
+
+### FIXED
+
+- AccessType Exclusive
+- Rotations in XY Maps
+
 ## 1.2.0
 
 ### ADDED
