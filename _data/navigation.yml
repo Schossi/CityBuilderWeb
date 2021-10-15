@@ -56,6 +56,8 @@ manual:
         url: /manual/monuments
       - title: "Attacks"
         url: /manual/attacks
+      - title: "Timings"
+        url: /manual/timings
   - title: "Other"
     children:
       - title: "Structures"
