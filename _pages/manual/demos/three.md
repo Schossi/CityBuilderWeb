@@ -8,6 +8,8 @@ sidebar:
 
 Play it [here]({% link _pages/demos/demoThree.md %}), uses pretty much every system in CCBK except attacks.
 
+<sub>While the visuals are now fully 3D this demo still uses Tilemaps for its logic. This means the [2D Tilemap Editor](https://docs.unity3d.com/Packages/com.unity.2d.tilemap@1.0/manual/index.html) is still required. For example the type of ground is still determined by the ground Tilemap, it is just invisible because its renderer has been disabled. So to block building or set layer values based on ground you need to enable the renderer, draw your changes and then disable it again.</sub>
+
 ## Buildings
 
 ### Housing

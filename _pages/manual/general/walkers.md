@@ -56,3 +56,6 @@ The walker randomly walks around while trying to avoid points already visited. I
 ### Wander
 Moves to a random adjacent point
 >homeless walkers
+  
+  
+An important field of the Walker Component is the Pivot. The Pivot is a transform in the center and root of the Walker. It is used to transform and rotate the Walker. If any of these things go wrong check that the Pivot is correctly assigned.

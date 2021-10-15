@@ -43,7 +43,7 @@ Both demos depend on either layers, tags or sorting layers. __If these settings 
 
 ### Dependencies
 * The demos depend on [TextMeshPro](http://docs.unity3d.com/Packages/com.unity.textmeshpro@2.1/index.html) for their UI
-* CCBK generally depends on [2D Tilemap Editor](https://docs.unity3d.com/Packages/com.unity.2d.tilemap@1.0/manual/index.html)
+* CCBK(even in 3D) generally depends on [2D Tilemap Editor](https://docs.unity3d.com/Packages/com.unity.2d.tilemap@1.0/manual/index.html)
 
 ## Usage
 

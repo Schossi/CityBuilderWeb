@@ -33,3 +33,5 @@ The different building parts can either interact directly of through the buildin
 
 The efficiency is expressed through two values.
 IsWorking[bool] is meant to indicate whether the building is generally working or somehow disrupted. The Efficiency[float] expresses how well the building is working from 0-1.
+
+An important field of the Building Component is the Pivot. The Pivot is a transform in the center and root of the Building. It is used to transform and rotate the Building and to place bars and other visuals over the building. If any of these things go wrong check that the Pivot is correctly assigned.
