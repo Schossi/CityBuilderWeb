@@ -11,8 +11,7 @@ sidebar:
 ### ADDED
 
 - __Timings__ system (events, animations and text based on playtime)
-- __Hexagon__ support in Setup, Map, ...
-- Hexagon Road Tiles
+- __Hexagon__ support in Setup, Map, Tiles, ...
 - Decorator Structures that save rotations and sizes
 - Object Generator for easy map object generation
 

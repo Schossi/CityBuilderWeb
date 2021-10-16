@@ -18,7 +18,7 @@ Instead the system includes an interface for that manager. The Behaviour that ac
 When possible keep changes to CCBK to a minimum. Instead remove the default implementation from the scene and add your own.  
 
 Let's say you wanted to change how the production components are prioritized for delivered raw materials.
-* copy DefaultItemManager to the project folder and it to something like MyProjectItemManager
+* copy DefaultItemManager to the project folder and rename it to something like MyProjectItemManager
 * change the code to fit your project
 * replace the item manager in the scene
   * pro tip: switch to debug mode in the inspector and replace the script to keep the field values
