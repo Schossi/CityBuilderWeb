@@ -18,6 +18,7 @@ sidebar:
 ### IMPROVED
 
 - FireWalker in Three Demo now actively walks to and extinguishes fires
+- Walkers use better points to enter and exit buildings(Pathfinding accepts multiple starts/ends)
 - BuildingRequirement can now require Buildings(see BuildingRequirementDebugging)
 - DefaultGameManager now saves the current randomization state
 
