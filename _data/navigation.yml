@@ -66,5 +66,7 @@ manual:
         url: /manual/dependencies
       - title: "Scores"
         url: /manual/scores
+      - title: "Views"
+        url: /manual/views
       - title: "Misc"
         url: /manual/misc
