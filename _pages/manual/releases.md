@@ -6,6 +6,32 @@ sidebar:
   nav: manual
 ---
 
+## 1.4.0
+
+### ADDED
+
+- Food View in Three Demo  
+uses the overhauled views and bars and the new IItemHolder interface  
+walkers can now also have bars; added bars that show items using their icons
+- Tornado Happening in Urban Demo
+
+### IMPROVED
+
+- Health Bars in Defense Demo reintegrated with Core Views and Bars
+- Rain in Three Demo now affects Heat and Water  
+the new ILayerModifier interface can be used to globaly affect Layers
+- Religion in Historic Demo now affects Farming Efficiency  
+the new ScoreEfficiencyComponent uses a Score to affect Building efficiency
+- Migration in Three Demo is now driven by a Score  
+this happiness score combines employment, housing quality and food availability
+
+### FIXED
+
+- suppressed unused event warnings
+- recursive error in retrievers
+- missing sprites in urban demo
+- minor errors in tests
+
 ## 1.3.0
 
 ### ADDED
