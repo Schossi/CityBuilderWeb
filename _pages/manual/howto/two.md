@@ -41,7 +41,8 @@ If you see any gaps between sprites try disabling Anti-Aliasing.
 ## Map
 
 * Place the [Manual Assets][1] inside your Assets folder
-* Open the Tile Palette Tab found in Windows/2D
+* Open the Tile Palette Tab found in Windows/2D  
+(install '2D Tilemap Editor' from Package Manager if the window is missing)
   * Make sure your active Tilemap is 'Ground' and your Palette is 'HTPalette'
   * Draw your map inside the guide lines of the map(turn on gizmos if you cant see it)  
 
@@ -103,7 +104,7 @@ You should now be able to place Water Supplies but only directly next to Water T
 ## Food
 
 ### Wheat
-* Select currently only Item(City/Items)
+* Select the currently only Item(City/Items)
   * Rename the Asset itself to Gold
   * Key > 'GOL' ; Name > 'Gold'
 * Create an Empty Gameobject in your Scene
@@ -227,7 +228,7 @@ The Bazaar will do nothing but spawn Sellers for now. It will only send out Buye
 * Create a Population(RMB>Create/CityBuilder/Population) in the City folder named 'PeasantPopulation'
   * Key > 'PST' ; Name > 'Peasant'
 
-* Open up the Buildings Window(Window/CityBuilder/Walkers)
+* Open up the Buildings Window(Window/CityBuilder/Buildings)
 * Copy Bazaar with Key > H1 ; Name > H1Hut
 * Open the Prefab by double clicking the preview image
   * Sprite > HTHut
