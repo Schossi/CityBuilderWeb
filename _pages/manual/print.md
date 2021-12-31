@@ -51,6 +51,7 @@ sidebar:
   - [Structures](#structures)
   - [Dependencies](#dependencies)
   - [Scores](#scores)
+  - [Views](#views)
   - [Misc](#misc)
 
 <div style="page-break-after: always;"></div>
@@ -133,6 +134,9 @@ sidebar:
 
 # Scores  
 {% include_relative other/scores.md %}  
+
+# Views  
+{% include_relative other/views.md %}  
 
 # Misc  
 {% include_relative other/misc.md %}
