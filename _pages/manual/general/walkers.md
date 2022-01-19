@@ -39,6 +39,32 @@ This Pathfinding uses Unity NavMesh. All demo scenes have a gameobject called Na
 Simple A* pathfinding of all points on the map that are not occupied.
 Only feasible for small maps, on larger maps use Map pathfinding instead.
 
+## Path Tags
+
+The Path Tag field on WalkerInfos can be used to pass any kind of Object along to Pathfinding. The following ways to use this are already built into CCBK.
+
+### WalkerInfo
+PathType: RoadBlocked
+
+Either assign the WalkerInfo itself to the field or check the Path Tag Self checkbox to send the WalkerInfo itself to Pathfinding. By using the checkbox an additional Object can be assigned to the Path Tag field.  
+For example the Three demo has RoadBlocker buildings with RoadBlockerComponent components that block off certain WalkerInfos that can be changed in a dialog window.
+
+### Road
+PathType: Road
+
+By using a MultiRoadManager instead of the default one and creating Networks for each Road it is possible to have multiple road networks that can even overlap. The Road object assigned to the walkers Path Tag then decides which network a walker can use. If the Path Tag is left empty in this scenaria the walker can use any network.
+
+The Urban Demo uses this for the Road and Rail Networks. The Urban Demo also has an example of road switching in an extra scene called Tunnel which demonstrated the RoadSwitcherComponent that can be used to switch walkers between different RoadNetworks. Keep in mind that the start- and endpoint has to be on the same network.
+
+Multi roading is also demonstrated in the MultiRoadDebugging test scene. (/CityBuilderCore.Tests/City/Movements/MultiRoadDebugging.unity)
+
+### Tile
+PathType: MapGrid
+
+The DefaultStructureManager has a field called PathOptions which can be used to define additional Pathfinding Networks on the Map. These Networks differ from the normal one either by only using certain GroundOptions(Tiles) or by restricting the level of structures that block it. The Tag on the path option has to match the one in the WalkerInfo for it to be used. This could technically be anything but one of the Tiles is probably intuitive.
+
+Structure pathing is demonstrated in the StructurePathDebugging test scene. (Assets/SoftLeitner/CityBuilderCore.Tests/City/Movements/StructurePathDebugging.unity)
+
 ## Walker Modes
 The walker base class includes helper methods for various modes of walking. These save their states automatically and can easily be continued on loading.
 ### Walk
