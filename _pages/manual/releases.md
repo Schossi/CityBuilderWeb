@@ -6,6 +6,24 @@ sidebar:
   nav: manual
 ---
 
+## 1.4.5
+
+### ADDED
+
+- More uses for PathTag (see Walkers manual page)
+  - RoadBlockers in Three Demo can be set to let certain Walkers pass
+  - Different Pathing by Ground Tile in StrcturePathDebugging test scene
+
+### IMPROVED
+
+- URP upgradability for Three demo (see CityBuilderThree/URP)
+
+### FIXED
+
+- walker rotation in urban tunnel scene
+- three props now use the correct materials 
+- links in manual pdf
+
 ## 1.4.0
 
 ### ADDED
