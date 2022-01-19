@@ -59,6 +59,11 @@ If none of the demos gets close enough to what you want to make or you want to m
 * Implementing Custom Logic  
 Need some special sauce in your game and know basic C#. [Continue Here]({% link _pages/manual/howto/custom.md %}) for a step to step guide to extending CCBK with your own components and systems.
 
+## URP
+
+CCBK uses the built in renderer to provide maximum compatibility. Most of its materials use the default built in shaders which URP should be able to automatically upgrade.  
+The THREE demo uses some custom shader for its terrain which can be recreated in URP using certain settings in the renderer. These settings are included in the asset. They can be found in the CityBuilderThree/URP folder along with some instructions on how to upgrade to URP.
+
 ## Feedback
 
 The quickest channels to reach me are mail and discord. Please feel free to reach out with any problems and questions. Feedback regarding the general direction of CCBK and particular future features are also always welcome. Though I might not immediately be able to incorporate your requests I very much take them into consideration when planning out future updates.  
