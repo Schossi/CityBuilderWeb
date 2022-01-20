@@ -17,9 +17,11 @@ sidebar:
 ### IMPROVED
 
 - URP upgradability for Three demo (see CityBuilderThree/URP)
+- Employment Priorities are displayed in descending order
 
 ### FIXED
 
+- Service Values increasing over time instead of decreasing
 - walker rotation in urban tunnel scene
 - three props now use the correct materials 
 - links in manual pdf
