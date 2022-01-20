@@ -36,23 +36,23 @@ sidebar:
   - [2D City Builder](#how-to-2d-city-builder)
   - [Custom Systems](#how-to-custom-systems)
 - General
-  - [Buildings](#buildings)
-  - [walkers](#walkers)
-  - [Layers](#layers)
+  - [Buildings](#general-buildings)
+  - [Walkers](#general-walkers)
+  - [Layers](#general-layers)
 - Systems
-  - [Resources](#resources)
-  - [People](#people)
-  - [Services](#services)
-  - [Risks](#risks)
-  - [Monuments](#monuments)
-  - [Attacks](#attacks)
-  - [Timings](#timings)
+  - [Resources](#systems-resources)
+  - [People](#systems-people)
+  - [Services](#systems-services)
+  - [Risks](#systems-risks)
+  - [Monuments](#systems-monuments)
+  - [Attacks](#systems-attacks)
+  - [Timings](#systems-timings)
 - Other
-  - [Structures](#structures)
-  - [Dependencies](#dependencies)
-  - [Scores](#scores)
-  - [Views](#views)
-  - [Misc](#misc)
+  - [Structures](#other-structures)
+  - [Dependencies](#other-dependencies)
+  - [Scores](#other-scores)
+  - [Views](#other-views)
+  - [Misc](#other-misc)
 
 <div style="page-break-after: always;"></div>
 
@@ -90,53 +90,53 @@ sidebar:
 <div style="page-break-after: always;"></div>  
 
 
-# Buildings  
+# General-Buildings  
 {% include_relative general/buildings.md %}  
 
-# Walkers  
+# General-Walkers  
 {% include_relative general/walkers.md %}  
 
-# Layers  
+# General-Layers  
 {% include_relative general/layers.md %}  
 
 <div style="page-break-after: always;"></div>  
 
 
-# Resources  
+# Systems-Resources  
 {% include_relative systems/resources.md %}  
 
-# People  
+# Systems-People  
 {% include_relative systems/people.md %}  
 
-# Services  
+# Systems-Services  
 {% include_relative systems/services.md %}  
 
-# Risks  
+# Systems-Risks  
 {% include_relative systems/risks.md %}  
 
-# Monuments  
+# Systems-Monuments  
 {% include_relative systems/monuments.md %}  
 
-# Attacks  
+# Systems-Attacks  
 {% include_relative systems/attacks.md %}  
 
-# Timings  
+# Systems-Timings  
 {% include_relative systems/timings.md %}  
 
 <div style="page-break-after: always;"></div>  
 
 
-# Structures  
+# Other-Structures  
 {% include_relative other/structures.md %}  
 
-# Dependencies  
+# Other-Dependencies  
 {% include_relative other/dependencies.md %}  
 
-# Scores  
+# Other-Scores  
 {% include_relative other/scores.md %}  
 
-# Views  
+# Other-Views  
 {% include_relative other/views.md %}  
 
-# Misc  
+# Other-Misc  
 {% include_relative other/misc.md %}
