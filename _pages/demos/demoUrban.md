@@ -9,8 +9,11 @@ sidebar:
 A simple city sim created in isometric 2d.  
 <sup>Sprites adapted from art by [opengameart.org/users/pixel32](https://opengameart.org/users/pixel32) under CC0</sup>
 
-<iframe frameborder="0" src="https://itch.io/embed-upload/5010690?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
+<iframe frameborder="0" src="https://itch.io/embed-upload/5578782?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
   
+An android version is available for download on the itch page.
+<iframe frameborder="0" src="https://itch.io/embed/983251" width="552" height="167"><a href="https://softleitner.itch.io/ccbk-urban-demo">CCBK Urban Demo by SoftLeitner</a></iframe>
+
 Build and expand a little town.  
 Start small or you'll run out of money before you have steady income.  
   
