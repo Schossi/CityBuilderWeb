@@ -11,6 +11,9 @@ A basic city builder created in full 3D.
 
 <iframe frameborder="0" src="https://itch.io/embed-upload/5106052?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
   
+A windows version is available for download on the itch page.
+<iframe frameborder="0" src="https://itch.io/embed/892044" width="552" height="167"><a href="https://softleitner.itch.io/ccbk-3d-city-builder-demo">CCBK 3D City Builder Demo by SoftLeitner</a></iframe>  
+
 Buildings are rotated using the __R__ key. The camera is rotated using __Q__ and __E__, use __mouse wheel__ to zoom and __hold shift__ to pitch.  
   
 Migration is always balanced with employment so people will only come to your city if there are enough jobs. Stages can only be placed on grey Streets that have been improved by increasing desirability.  
