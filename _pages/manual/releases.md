@@ -6,6 +6,15 @@ sidebar:
   nav: manual
 ---
 
+## 1.4.6
+
+### ADDED
+
+- Mobile support for Urban and Defense Demos
+  - adjusted UI
+  - added touch controls
+- WalkerAreaMask (NavMesh areas for use in PathTag)
+
 ## 1.4.5
 
 ### ADDED
