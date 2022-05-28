@@ -35,7 +35,7 @@ Now we need to provide some food. To do this we will need the following.
 * silo to store them
 * market for distribution  
 
-The farms have to be created on the fertile ground of the forrest. Create a side road there and put a blocker on it so the walkers servicing the houses don't wander off.
+The farms have to be created on the fertile ground of the forest. Create a side road there and put a blocker on it so the walkers servicing the houses don't wander off.
 The market has to be built close to the housing so the roaming seller can reach the houses. The silo should probably be built somewhere in between.  
 If not enough people move into the housing you should build more farms. People will only immigrate if they have jobs in your city.
 
