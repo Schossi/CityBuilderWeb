@@ -6,6 +6,40 @@ sidebar:
   nav: manual
 ---
 
+## 1.5.0
+
+first in a series of 2-3 updates that focus on the new CityBuilderTown demo, documentation and core framework improvements
+
+### ADDED
+
+- CityBuilderTown[EXPERIMENTAL]
+  - terrain based
+  - task system
+- Walker Actions and Processes
+  - higher level walker control
+- Risk- and ServiceCategory
+  - building and walker bars
+  - service category evolution
+- Building Prefab Alternatives
+- ItemConstructionComponent
+  - replaces building when items have been supplied
+
+### IMPROVED
+
+- Documentation
+  - header comments for all core objects
+  - descriptions for demo manual pages
+  - core building components manual diagram
+- Walker now directly exposes an Animator
+  - animation parameters on WalkerInfo(Walk, Direction, Carry)
+- additional storage modes(ItemSpecific, TotalItemCapped, TotalUnitCapped)
+- various interfaces simplified
+
+### FIXED
+
+- mouse wrongly touch panning
+- camera shake on middle mouse drag
+
 ## 1.4.6
 
 ### ADDED
