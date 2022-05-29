@@ -111,6 +111,14 @@ Bridges are special buildings that let walkers pass over them. They let walkers 
 |![Ore](/assets/images/three/structures/ore.png) |__Ore__           |StructureCollection<br/>LayerAffector|Key: ORE Destr: 0 Deco: 0 Walk: 0 Size: 2<br/>Layer: Iron Value: 10 Range: 1|
 |![Rubble](/assets/images/three/structures/rubble.png) |__Rubble__  |StructureCollection|Key: RUB Destr: 1 Deco: 1 Walk: 0 Size: 1|
 
+The Tree Structure found under MapObjects/Trees is a simple StructureCollection with size 1. Its Key is TRE which can be used by others objects in the game to refer to the structure without directly referencing it. A LayerAffector that affects the desirability layer can be found on the same gameobject. A LayerAffector looks for a structure on the same or the parent gameobject and affects the layer ad every point of the structure. It subscribes to the structures changed event so whenever a tree is removed the desirability is changed accordingly.  
+
+Ore works pretty much exactly like Trees. The only differences are that IsDestructible is not checked for Ore so it cannot be removed by the DemolishTool. Also the LayerAffector affects the IronLayer which is used to check where IronMines can be built.  
+
+The Rubble StructureCollection is marked by IsDecorator as a decorator which means that it will not keep buildings from being built on top of it and will automatically be removed when they are. Rubble is created when a building is destroyed by the CollapseRisk because that Risk has RUB set as its StructureCollectionKey.  
+
+The last two structures found in MapObjects are Bushes and Pebbles which are just there for looks. The only reason they are structures and not just meshes on the map is so they can be removed by the DemolishTool or when something is built on top of them. You will also find an ObjectGenerator behaviour on these decorators which can be used to quickly add a bunch or random decorators in the editor. 
+
 ## Walkers
 
 ### Migration
