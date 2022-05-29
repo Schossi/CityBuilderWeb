@@ -32,6 +32,7 @@ sidebar:
   - [3D City Builder](#3d-city-builder)
   - [2D Tower Defense](#2d-tower-defense)
   - [2D City Sim](#2d-city-sim)
+  - [3D Colony Sim](#3d-colony-sim)
 - How To
   - [2D City Builder](#how-to-2d-city-builder)
   - [Custom Systems](#how-to-custom-systems)
@@ -75,6 +76,9 @@ sidebar:
 
 # 2D City Sim  
 {% include_relative demos/urban.md %}  
+
+# 3D Colony Sim  
+{% include_relative demos/town.md %}  
 
 <div style="page-break-after: always;"></div>  
 

@@ -28,6 +28,8 @@ manual:
         url: /manual/defense
       - title: "2D City Sim"
         url: /manual/urban
+      - title: "3D Colony Sim"
+        url: /manual/town
   - title: "How To"
     children:
       - title: "2D City Builder"
