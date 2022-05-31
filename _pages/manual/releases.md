@@ -55,7 +55,7 @@ first in a series of 2-3 updates that focus on the new CityBuilderTown demo, doc
 
 - More uses for PathTag (see Walkers manual page)
   - RoadBlockers in Three Demo can be set to let certain Walkers pass
-  - Different Pathing by Ground Tile in StrcturePathDebugging test scene
+  - Different Pathing by Ground Tile in StructurePathDebugging test scene
 
 ### IMPROVED
 
