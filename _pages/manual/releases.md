@@ -6,6 +6,28 @@ sidebar:
   nav: manual
 ---
 
+## 1.5.1
+
+### ADDED
+
+- PopulationVisualizer that displays population quantity and capacity
+- ManualExpansion allows placement of ExpandableBuilding in Editor
+
+### CHANGED
+
+- DistributionComponent  
+no longer discards items the seller brings back if the storage has been filled  
+additional new option on SaleWalker to reserve space for the items it carries
+- TownHomeComponent spawns walkers even when empty 
+
+### FIXED
+
+- ProductionWalkerComponent missing calls to base methods
+- StructureTerrainTrees not changing on load
+- TownDeliveryTask not finishing when items are brought directly
+- TownGatheringComponent and TownForestingComponent task cleanup and saving
+- TownFieldTask was missing walker assignment
+
 ## 1.5.0
 
 first in a series of 2-3 updates that focus on the new CityBuilderTown demo, documentation and core framework improvements
