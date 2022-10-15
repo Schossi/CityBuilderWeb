@@ -6,6 +6,36 @@ sidebar:
   nav: manual
 ---
 
+## 1.6.0
+
+### ADDED
+
+- TerrainRoadManager visualizes roads by changing terrain texture 
+- Terrain option in Setup Dialog
+- MovementPlayground and BuildingPlayground test scenes
+- DepopulationHappening which kills a fraction of the population
+- TownDemo
+  - title screen, menus, difficulty, map generation
+  - market building, distribution task, peddler job
+  - road tool and task
+  - views for food, wood and actions
+  - test project
+  - inspector tooltips, xml documentation
+  - ...
+
+### IMPROVED
+
+- TerrainModifier can also save height and texture
+- GridHeight is applied to Buildings
+- Walker can use NavMeshAgent for movement
+- BuildingBuilder adjusts position based on camera direction
+- CameraController now saves rotation
+
+### FIXED
+
+- LayerKeyVisualizer on scaled canvas
+- HasPoint on NavMesh when elevated
+
 ## 1.5.1
 
 ### ADDED

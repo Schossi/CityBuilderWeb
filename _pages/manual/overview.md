@@ -19,12 +19,11 @@ The kit was created with the classic evolve housing, build monuments type of gam
 CCBK is separated into multiple assemblies. Which ones you need depends on how you are planning to use the Kit. For your first exploration create a new project and remove the example assets and materials, then import the entire asset. Importing project settings is optional except for TagManager if you want to run the demos. 
 
 * CityBuilderCore  
-The Core Framework of CCBK.  
-Always import this one.
+The Core Framework of CCBK, always import this one.
 
 * CityBuilderCore.Tests  
-Tests some core functionality of CityBuilderCore.  
-Only import this if you plan to change CityBuilderCore and want to check if the basic systems still function.  
+Contains various automated and manual testing scenes for CityBuilderCore.  
+Can be useful to explore how various systems work and how they are set up.  
 
 * CityBuilderThree  
 Contains the [3D City Builder]({% link _pages/demos/demoThree.md %}) demo  
