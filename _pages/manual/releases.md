@@ -6,6 +6,16 @@ sidebar:
   nav: manual
 ---
 
+## 1.6.1
+
+### ADDED
+- ZoomCollider on CameraController can keep camera from clipping  
+(used in town demo and three demo stage two)
+
+### FIXED
+- TerrainModifier not replacing TerrainData in collider  
+(caused bad highlighting in generated town demo scenes)
+
 ## 1.6.0
 
 ### ADDED
