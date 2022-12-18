@@ -25,11 +25,6 @@ The Core Framework of CCBK, always import this one.
 Contains various automated and manual testing scenes for CityBuilderCore.  
 Can be useful to explore how various systems work and how they are set up.  
 
-* CityBuilderThree  
-Contains the [3D City Builder]({% link _pages/demos/demoThree.md %}) demo  
-Import if you want to start by adapting this demo.  
-__For the menu to work add the Menu, StageOne, StageTwo, StageThree scenes in Build Settings.__
-
 * CityBuilderDefense  
 Contains the [2D Tower Defense]({% link _pages/demos/demoThree.md %}) demo  
 Import if you want to start by adapting this demo.
@@ -38,7 +33,25 @@ Import if you want to start by adapting this demo.
 Holds completed samples of the HowTo section of this manual.  
 Import if you're stuck on a how to or exploring.
 
-Both demos depend on either layers, tags or sorting layers. __If these settings were not set during import please copy the contents of TagManager.txt from the demo folder to the TagManager.asset in you ProjectSettings.__  
+* CityBuilderThree  
+Contains the [3D City Builder]({% link _pages/demos/demoThree.md %}) demo  
+Import if you want to start by adapting this demo.  
+__For the menu to work add the Menu, StageOne, StageTwo, StageThree scenes in Build Settings.__
+
+* CityBuilderTown  
+Contains the [3D Colony Sim]({% link _pages/demos/demoTown.md %}) demo  
+Import if you want to start by adapting this demo.  
+__For the menu to work add the TownTitle and TownHills scenes in Build Settings.__
+
+* CityBuilderTown.Tests  
+Contains some automated and manual testing scenes related to the town demo.
+Can be useful to explore how some of the specialized town demo systems work.  
+
+* CityBuilderUrban  
+Contains the [2D City Sim]({% link _pages/demos/demoUrban.md %}) demo  
+Import if you want to start by adapting this demo.
+
+Most demos depend on either layers, tags or sorting layers. __If these settings were not set during import please copy the contents of TagManager.txt from the demo folder to the TagManager.asset in you ProjectSettings.__  
 
 ### Dependencies
 * The demos depend on [TextMeshPro](http://docs.unity3d.com/Packages/com.unity.textmeshpro@2.1/index.html) for their UI
@@ -67,8 +80,8 @@ The THREE demo uses some custom shader for its terrain which can be recreated in
 
 Current development is focused on three main areas:
 
-* Completing the CityBuilderTown demo
-* Refactoring and Refining CityBuilderCore
+* Documenting, Extending and Refining the CityBuilderTown demo
+* Extending, Refactoring and Refining CityBuilderCore
 * Improving Documentation
 
 ## Feedback

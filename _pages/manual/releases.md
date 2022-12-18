@@ -6,6 +6,12 @@ sidebar:
   nav: manual
 ---
 
+## 1.7.0
+
+### 3D Colony Sim Demo
+
+This release marks the official promotion of [CityBuilderTown]({% link _pages/demos/demoTown.md %}) from experimental to an official demo. This means a removal of all placeholders and a rework of all elements of the demo. This includes a completely __new Set of Low Poly 3D Models__ used in that demo.
+
 ## 1.6.1
 
 ### ADDED

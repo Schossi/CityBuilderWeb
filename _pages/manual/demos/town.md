@@ -6,8 +6,6 @@ sidebar:
   nav: manual
 ---
 
-!!! EXPERIMENTAL !!!!!! EXPERIMENTAL !!!!!! EXPERIMENTAL !!!
-
 Open TownTitle to try the game out the same way a player would(TownTitle and TownHills have to be added to Build). To quickly jump in you can use TownDebug or TownDebugFilled which has a bit more stuff set up. The debug scenes also have a debug tool bar above the normal one that lets you build and demolish things instantly.
 
 If you are interested in some of the individual systems of the town demo you can also check out the CityBuilderTown.Tests project which contains various test scenes. Some of them can also be quickly run through with the test runner to confirm that the systems still work after modifications.
@@ -69,6 +67,3 @@ Tasks as well as the walkers heavily rely on the new walker actions and processe
 - __Wood__ for warming up in houses, limited in the UI bottom right to make sure there are logs left for construction
 - __Potato__ for eating in houses
 - __Berry__ for eating in houses
-
-
-!!! EXPERIMENTAL !!!!!! EXPERIMENTAL !!!!!! EXPERIMENTAL !!!

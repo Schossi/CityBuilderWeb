@@ -7,6 +7,8 @@ main:
 demos:
   - title: "3D City Builder"
     url: /demos/three
+  - title: "3D Colony Sim"
+    url: /demos/town
   - title: "2D Tower Defense"
     url: /demos/defense
   - title: "2D City Sim"
@@ -24,12 +26,12 @@ manual:
     children:
       - title: "3D City Builder"
         url: /manual/three
+      - title: "3D Colony Sim"
+        url: /manual/town
       - title: "2D Tower Defense"
         url: /manual/defense
       - title: "2D City Sim"
         url: /manual/urban
-      - title: "3D Colony Sim"
-        url: /manual/town
   - title: "How To"
     children:
       - title: "2D City Builder"
