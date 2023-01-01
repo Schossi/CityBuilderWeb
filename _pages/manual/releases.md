@@ -6,6 +6,25 @@ sidebar:
   nav: manual
 ---
 
+## 1.7.1
+
+### ADDED
+- Notification System and Notifications for
+  - Town Constructions finishing
+  - Town Season changing
+  - Town Walkers dying
+  - Urban Tornados
+- Town Trees falling down is now visualized
+- Town Walkers can visualize Tools for Tasks
+  - Woodcutters and Foresters use an Axe
+
+### FIXED
+- critical bug preventing loading of most walkers
+- bridges not working as roads after reloading
+- worker walkers bug when site loads later or is destroyed
+- dead town inhabitants not being removed from their home
+- some other minor fixes in the town demo
+
 ## 1.7.0
 
 ### 3D Colony Sim Demo
