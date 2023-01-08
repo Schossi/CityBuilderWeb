@@ -6,6 +6,22 @@ sidebar:
   nav: manual
 ---
 
+## 1.7.2
+
+### ADDED
+- Tooltips
+- Walker and Building Dialogs in Town Demo
+- Notifications in Three Demo(Risks, Monuments)
+
+### CHANGED
+- Building Alternative is rotated on build
+
+### FIXED
+- Error in Editor Windows with Unity 2021
+- TownConstruction finishing prematurely
+- Error caused by Harvest Tasks being restarted
+- Off Mesh Link on Bridges in Three Demo
+
 ## 1.7.1
 
 ### ADDED
