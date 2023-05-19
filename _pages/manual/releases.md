@@ -6,6 +6,25 @@ sidebar:
   nav: manual
 ---
 
+## 1.7.3
+
+### ADDED
+- Off Grid Link  
+equivalent to OffMeshLink in NavMesh but for grid(road) walking  
+see debug scenes LinkRoadDebugging and BuildingPlaygroundLink
+- Mesh Highlight Manager  
+visualizes highlights by modifying meshes during runtime  
+used in town demo to dramatically improve highlighting performance  
+three demo uses mesh highlighting with nice rounded outlines  
+see BuildingPlayground2D for simple pixelated outline
+- Variant Production Component  
+more versatile production component that allows configuring different variants  
+see ProductionDebugging test scene for some examples
+
+### IMPROVED
+- better handling of mouse position outside play area
+- town demo harvest tool performance dramatically improved
+
 ## 1.7.2
 
 ### ADDED
