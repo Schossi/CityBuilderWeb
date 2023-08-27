@@ -6,6 +6,23 @@ sidebar:
   nav: manual
 ---
 
+## 1.7.4
+
+this will be the last version based on unity 2019.4.18, the next update will increase the minimum version to a more recent LTS
+
+### ADDED
+- tagged requirements on DefaultMap and TerrainMap  
+define certain building restrictions on the map by tag(building, road, structure)  
+check out BuildingPlaygroundTagged and BuildingPlaygroundTerrain for some examples
+
+### IMPROVED
+- StructureBuilder can now be used for any structure
+
+### FIXED
+- removal of old roads on load
+- harvesting of grown trees in town demo
+- gaps in terrain road visuals in some maps
+
 ## 1.7.3
 
 ### ADDED
