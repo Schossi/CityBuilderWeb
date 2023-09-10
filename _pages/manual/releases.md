@@ -6,6 +6,34 @@ sidebar:
   nav: manual
 ---
 
+## 1.8.0
+
+minimum recommended unity version has been raised to 2021.3.29
+
+### ADDED
+- minimal demo scene demonstrating simple placement  
+CityBuilderCore.Tests/Other/Placement/Placement.unity
+- Buildings can now be suspended and resumed  
+temporarily stops them from working without having to demolish and rebuild them  
+(see checkmarks Three and Town demos building dialogs) 
+- simple SavingIndicator in all demos
+- simple spawn(BuildingAddonSpawn) and despawn(DemolishVisualDespawn) animations  
+(see Placement demo)
+
+### IMPROVED
+- Migrations can be configured to use multiple entry points  
+(see PlebMigration in Three demo Debug scene)
+- Box option in StructureBuilder to build in a rectangular shape  
+(see RugTool in Placement demo)
+- Override option in StructureBuilder to remove other structures  
+(see RugTool in Placement demo)
+- Demolish tool has new LevelsNext field to configure order of deletion
+(see DemolishTool in Placement demo) 
+
+### FIXED
+- tooltip position in scaled canvas
+- various minor adjustments to accommodate higher unity version
+
 ## 1.7.4
 
 this will be the last version based on unity 2019.4.18, the next update will increase the minimum version to a more recent LTS

@@ -8,7 +8,7 @@ sidebar:
 
 ## Welcome
 
-This is the manual for Classic City Builder Kit by SoftLeitner. Classic City Builder Kit is quite the mouthful so i will be referring to it using the shorthand CCBK.  
+This is the manual for Classic City Builder Kit by SoftLeitner. Classic City Builder Kit is quite the mouthful so I will be referring to it using the shorthand CCBK.  
 
 Oldschool walker based City Builders are very systems heavy games that require lots of tweaking and balancing to get right. CCBK was created with the aim of providing all the common tropes of the genre and making them easily accessible in the Editor.  
 
