@@ -15,6 +15,7 @@ available for Building and various BuildingComponents
 
 ### FIXED
 - DeliveryWalker looking for storages in Load before storages are full loaded
+- GridPathing allowed invalid paths by default, now behind const ALLOW_INVALID
 - ServiceCategory was not fully integrated in Evolution
 - Invalid tool selection in new game in TownDemo after placing startup
 - TMPro warning in TownDemo due to unnecessary CanvasRenderer
