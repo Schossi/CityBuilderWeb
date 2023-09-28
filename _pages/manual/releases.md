@@ -6,6 +6,20 @@ sidebar:
   nav: manual
 ---
 
+## 1.8.1
+
+### ADDED
+- additional debug options in the inspector in play mode  
+for example items can be added directly to StorageComponents  
+available for Building and various BuildingComponents
+
+### FIXED
+- DeliveryWalker looking for storages in Load before storages are full loaded
+- ServiceCategory was not fully integrated in Evolution
+- Invalid tool selection in new game in TownDemo after placing startup
+- TMPro warning in TownDemo due to unnecessary CanvasRenderer
+- Validation that prevents global storage from being configured to access itself 
+
 ## 1.8.0
 
 minimum recommended unity version has been raised to 2021.3.29
