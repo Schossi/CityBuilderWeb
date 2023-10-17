@@ -6,6 +6,22 @@ sidebar:
   nav: manual
 ---
 
+## 1.8.2
+
+### IMPROVED
+- ItemStorage has new ItemStorageMode called Store  
+allows redirecting to a seperate ItemStore component  
+for example to combine storages across a building
+- TerrainMap now derives from DefaultMap  
+this enables blocking through tilemaps on TerrainMap 
+- various custom property drawers  
+ItemQuantity, ItemStorage, BuildingRequirement, ...
+- storage orders are now also persisted
+
+### FIXED
+- GetItemQuantity on MultiItemContainer leading to wrong display in UI Panel
+- service category recipient not triggering evolution
+
 ## 1.8.1
 
 ### ADDED
