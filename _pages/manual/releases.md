@@ -6,6 +6,18 @@ sidebar:
   nav: manual
 ---
 
+## 1.8.3
+
+### IMPROVED
+- continue game from last saved data  
+new buttons using this functionality in Three and Town demos
+- whether a stage is finished is saved per stage and per save game  
+this allows beating the stage again on a new save
+
+### FIXED
+- walkers using navmesh agents cancelling on load
+- exception in storage component with older data
+
 ## 1.8.2
 
 ### IMPROVED
