@@ -6,6 +6,29 @@ sidebar:
   nav: manual
 ---
 
+## 1.8.4
+
+### ADDED
+- Sounds  
+Town demo now has UI sounds, an atmospheric background track and various sounds for tasks like harvesting stone or chopping wood
+  - AudioPool to play sounds like button clicks from a central component
+  - AudioSlider that sets and persists volume levels
+- MissionSelector  
+example scene that demonstrates an alternate setup for a menu screen(CityBuilderCore.Tests/Other/MissionSelector)
+- TaskList  
+used in the Three demo for a multi stage tutorial
+- MessageBox  
+generic message box dialog(Ok, OkCancel, YesNo, YesNoCancel)
+- Messaging  
+allows sending messages and attaching events to buildings and walkers  
+Town uses this to send messages from animations to the current task where it plays a sound
+
+### CHANGED
+- DefaultMap no longer clamps points, clamping is done in CameraController instead
+
+### FIXED
+- tooltips sometimes not exiting
+
 ## 1.8.3
 
 ### IMPROVED

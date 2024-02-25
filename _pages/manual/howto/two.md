@@ -12,7 +12,7 @@ sidebar:
   nav: manual
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I5TJ6GY3LE8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_Dbs-iGW5HA?si=fL7Md1zEby1dk1HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Throughout the following steps we will create a very simple oldschool city builder from scratch using CCBK. Play an advanced version of it [here]({% link _pages/demos/demoDefense.md %}).
 
