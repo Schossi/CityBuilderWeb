@@ -17,11 +17,11 @@ BuildingAddon has also received some improvements to keep in line with this addi
   - Walker/BuildingAddonHappening that adds addons when active(epidemic in three)
 - Slower building in the defense demo  
 applies slow addon to attackers which slows them and shows a blue capsule
+
+### IMPROVED
 - SelectionTool visualizes hovered point, walker or building in town and three demos  
 highlighting used to visualize points, walkers and buildings by using addons
 - SelectionDialog and town dialogs visualize selected walkers and buildings
-
-### IMPROVED
 - CameraController can pan, zoom, rotate and pitch on both mouse buttons  
 MiddleMouseButton:  default>pan shift>rotate&pitch alt>zoom  
 RightMouseButton:   default>rotate&pitch shift>zoom alt>pan
