@@ -6,6 +6,40 @@ sidebar:
   nav: manual
 ---
 
+## 1.8.5
+
+### ADDED
+- WalkerAddons  
+reusable piece of logic that can be added to walkers very similarly to BuildingAddons  
+BuildingAddon has also received some improvements to keep in line with this addition
+  - Save field that sets whether an addon is persisted and recreated on load
+  - Accumulation field sets what happens when an addon is added more than once
+  - Walker/BuildingAddonHappening that adds addons when active(epidemic in three)
+- Slower building in the defense demo  
+applies slow addon to attackers which slows them and shows a blue capsule
+- SelectionTool visualizes hovered point, walker or building in town and three demos  
+highlighting used to visualize points, walkers and buildings by using addons
+- SelectionDialog and town dialogs visualize selected walkers and buildings
+
+### IMPROVED
+- CameraController can pan, zoom, rotate and pitch on both mouse buttons  
+MiddleMouseButton:  default>pan shift>rotate&pitch alt>zoom  
+RightMouseButton:   default>rotate&pitch shift>zoom alt>pan
+- ItemStore can be persisted by one of the connected storages  
+see StorageDebugging for an example of two storages using the same ItemStore
+- additional test for town demo that tests home provisioning
+- switch between walkers and their home in town dialogs
+- stacked storages can reserve capacity
+- additional custom editors
+  - trigger timing happenings(epidemic, rain, ...)
+  - town walker editor
+  - storages show reservations
+
+### FIXED
+- task cancellation on walker death in town demo
+- ItemStorage MoveItemsTo correctly returns the moved quantity 
+- town demo building dialog error in empty homes
+
 ## 1.8.4
 
 ### ADDED
