@@ -6,6 +6,23 @@ sidebar:
   nav: manual
 ---
 
+## 1.8.6
+
+### IMPROVED
+- default highlight manager can highlight tiles with colors(mouse over highlights)
+- meta save data is deleted with the regular save data 
+- rotating the camera with RMB does not cancel tools(click held longer than 0.1s)
+- highlights and layer keys are not shown when mouse is outside map
+- building and walker addon queue is now also persisted
+- canceling of roaming and walking  
+cancellation is stored in walking state leaving walking path mostly stateless and reusable
+walking by method or process and cancelling can be tested in MovementPlaygroundGrid
+- additional xml documentation in code
+
+### FIXED
+- copy and deleted buttons in editor dialogs too small in newer unity versions
+- bug when saving the game in town demo before placing the initial building
+
 ## 1.8.5
 
 ### ADDED
