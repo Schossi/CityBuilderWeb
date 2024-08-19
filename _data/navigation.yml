@@ -48,6 +48,8 @@ manual:
         url: /manual/walkers
       - title: "Layers"
         url: /manual/layers
+      - title: "Connections"
+        url: /manual/connections
   - title: "Systems"
     children:
       - title: "Resources"

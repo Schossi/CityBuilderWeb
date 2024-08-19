@@ -21,6 +21,8 @@ Placeholder for multiple other Views(only one view is active at a time in IViews
 Applies a LayerMask to the main camera
 * Layer  
 Visualizes the values of a layer on the map using IOverlayManager
+* Connection  
+Visualizes the values of a connection on the map using IOverlayManager
 * Efficiency  
 Visualizes the efficiency of Buildings map using IOverlayManager
 * BuildingBars  

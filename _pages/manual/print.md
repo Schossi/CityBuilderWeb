@@ -40,6 +40,7 @@ sidebar:
   - [Buildings](#general-buildings)
   - [Walkers](#general-walkers)
   - [Layers](#general-layers)
+  - [Connections](#general-connections)
 - Systems
   - [Resources](#systems-resources)
   - [People](#systems-people)
@@ -102,6 +103,9 @@ sidebar:
 
 # General-Layers  
 {% include_relative general/layers.md %}  
+
+# General-Connections  
+{% include_relative general/connections.md %}  
 
 <div style="page-break-after: always;"></div>  
 
