@@ -6,6 +6,47 @@ sidebar:
   nav: manual
 ---
 
+## 1.8.7
+
+### ADDED
+- MoveTool  
+allows moving and rotating one or more buildings and structures  
+IsMovable field added to BuildingInfo and different structure components  
+tool added in sidebar in various scenes, move button added to three building dialog
+- ConnectionPlayground(CityBuilderCore.Tests/Other)  
+playground scene that allows trying out Connection system on its own  
+also check out the new Connections manual page which explains connection fundamentals
+- ConnectionFeederBuilder  
+special building builder that shows preview of connection  
+used in playground and urban demo power station
+- LayerPlayground(CityBuilderCore.Tests/Other)  
+playground scene that allows trying out Layer system on its own  
+- LayerBuildingBuilder  
+special building builder that previews layer values by highlighting or tilemap  
+used in playground(LayerPreview tilemap) and on three demo gardens(highlighting)
+- SelectionSwitcher  
+allows switching through buildings and walkers of the same type from dialogs  
+using in three and town demos(special variant in town demo that switches by job)
+
+### IMPROVED
+- HelpUrl  
+clicking the ? button on an AAK behaviour will now open the API documentation
+- ConnectionPasserStructure now allows specifying structure by Key  
+this allows passing connections through roads as shown in the connection playground
+- ViewLayer now also visualizes points with 0 value if they are affected by something  
+avoids strange looking gaps in the overlay when layer value adds up to 0 between affectors
+
+### CHANGED
+- tool cancellation no longer bound to framerate
+- selection tool needs full click instead of just mouse up
+- DefaultStructureManager subscribes to PointsChanged for every type of structure
+- CheckBuildingRequirements renamed to CheckRequirements  
+and split into CheckBuildingRequirements and CheckRoadRequirements
+
+### FIXED
+- height calculation for ghosts different from placed buildings
+- urban power lines did not refresh connections on destroy
+
 ## 1.8.6
 
 ### IMPROVED
