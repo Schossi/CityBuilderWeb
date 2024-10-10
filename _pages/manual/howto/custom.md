@@ -279,7 +279,7 @@ public CyclicCustomDestinationWalkerSpawner CustomDestinationWalkers;
 private void Awake()
 {
     CustomRoamingWalkers.Initialize(Building);
-    CustomDestinationWalkers.Initialize(Building);
+    CustomDestinationWalkers.Initialize(Building, destinationWalkerSpawning);
 }
 private void Update()
 {
@@ -289,11 +289,18 @@ private void Update()
         CustomDestinationWalkers.Update();
     }
 }
+
+private bool destinationWalkerSpawning(CustomDestinationWalker walker)
+{
+    var path = Dependencies.Get<ICustomManager>().GetPath(Building.BuildingReference, walker.PathType, walker.PathTag);
+    if (path == null)
+        return false;
+    walker.StartWalker(path);
+    return true;
+}
 {% endhighlight %}
 
-Initialization and updating of the spawners is handled by the owning building component.
-You might have noticed that StartWalker on the destination walker is not called here.
-While that would be the easier thing to do we'll move that responsibility out into a manager for the sake of this example.
+Initialization and updating of the spawners is handled by the owning building component. Finding a path for the destination walker could be done directly in the component but we'll move it out into a custom manager which we will create in the next chapter.
 
 ## Manager
 
