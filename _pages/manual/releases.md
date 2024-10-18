@@ -6,6 +6,35 @@ sidebar:
   nav: manual
 ---
 
+## 1.8.8
+
+### ADDED
+- PathQueries  
+request simple walking paths as well as receiver, giver and worker paths as a query
+these queries can be completed later allowing a better distribution of workload
+- BurstPathfinding  
+pathfinding method can be switched between regular and job based burst pathfinding
+this is done on the new pathfinding options on Road and Structure Managers
+- InitializationMode  
+new options on spawners of delivery, worker and retriever walkers  
+allows choosing if a path is calculated before or after spawning
+
+### IMPROVED
+- Performance  
+items storage, dependency caching, less linq in hot paths, migration, layer modifier, ...  
+- Unity 6 Compatibility  
+obsolete methods replaced by new variants 
+
+### CHANGED
+- Package Dependencies  
+dependencies on burst, tilemap, textmeshpro are included explicitly in the package
+
+### FIXED
+- exception in urban tunnel scene
+- migration speed calculation
+- monument using item on wrong stage
+- wrong tiles assigned in three roads
+
 ## 1.8.7
 
 ### ADDED
