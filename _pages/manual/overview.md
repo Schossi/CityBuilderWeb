@@ -14,6 +14,8 @@ Oldschool walker based City Builders are very systems heavy games that require l
 
 The kit was created with the classic evolve housing, build monuments type of game in mind and most of the systems are commonly seen in that genre. That being said large parts like Buildings, Items, Walkers and Layers are general enough to create a wide variety of games.  
 
+This manual includes overviews of the demos, how to pages and explanations for all the major systems. More detailed explanations of individual components, interfaces and methods can be found directly in the code of the asset as xml headers and comments. These are also found in the online API documentation reached by clicking the ? button on any CCBK component in the unity inspector. Quick descriptions of most scenes in the asset can be displayed by clicking the About button in the scene view.
+
 ## Project Structure
 
 CCBK is separated into multiple assemblies. Which ones you need depends on how you are planning to use the Kit. For your first exploration create a new project and remove the example assets and materials, then import the entire asset. Importing project settings is optional except for TagManager if you want to run the demos. 
@@ -73,16 +75,19 @@ Need some special sauce in your game and know basic C#. [Continue Here]({% link 
 
 ## URP
 
-CCBK uses the built in renderer to provide maximum compatibility. Most of its materials use the default built in shaders which URP should be able to automatically upgrade.  
+If your project does __not use URP__ please make sure the URP __package is not installed__. Some shaders like ThreeMapRoad and HeightMapped render differently when the package is present. Having the URP package but using Built-In can lead to wrong visuals.
+
+The demos use the built in renderer to provide maximum compatibility. Most of the materials use default built in shaders which can be automatically upgraded using the URP Material Converter.  
+
 The THREE demo uses some custom shader for its terrain which can be recreated in URP using certain settings in the renderer. These settings are included in the asset. They can be found in the CityBuilderThree/URP folder along with some instructions on how to upgrade to URP.
 
 ## Roadmap
 
 Current development is focused on three main areas:
 
-* Documenting, Extending and Refining the CityBuilderTown demo
-* Extending, Refactoring and Refining CityBuilderCore
-* Improving Documentation
+* polishing the demos
+* extending and refining core
+* improving documentation
 
 ## Feedback
 

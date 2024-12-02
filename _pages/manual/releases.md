@@ -6,6 +6,51 @@ sidebar:
   nav: manual
 ---
 
+## 1.9.0
+
+### ADDED
+- Terrain variant of Three demo that uses Terrain for its ground
+- Hybrid variant of Town demo with regular models instead of terrain trees 
+  - TownPlainsHybrid mission selectable from the Title
+  - new tree and berry bush models
+- About Button in SceneView that shows short description in most scenes
+- HeightMapped(Graph) shader and HeightMappedRenderer component  
+moves vertices according to heightmap, can show tilemaps like roads on top of terrain  
+used in Three DebugTerrain scene and BuildingPlaygroundTerrainTilemap
+- StructureCollectionFloat that saves full position instead of just map point
+
+### IMPROVED
+- Agent walking with (stopping)distance  
+usable with the new WalkAgentAction, new field in town harvest and item tasks  
+stops town walkers in front of trees and items instead of inside them 
+- Place structures and buildings by just clicking on the map  
+click StartPlacing in the inspector of various components to start
+StructureCollection(Float), StructureDecorators, DefaultBuildingManager
+- show storage capacity and missing construction items in town building panel
+- activate navmesh obstacle in town construction after ground is cleared
+- ObjectGenerator places prefabs in Edit mode instead of instances
+- apply height to Wanderer, StructureCollection, StructureDecorators
+- apply height to NavMesh destinations and agent walking
+- TerrainMap visualizes Min- and MaxHeight
+- moved sprite and model variants of Three roads into different palettes 
+- better URP material upgradability
+- debugger step through getting dependencies 
+- better handling of missing mouse position(throws error in unity 6)
+
+### CHANGED
+- Negative ExecutionOrder for Maps, ObjectSet and Structures  
+structures can now reliably be retrieved by key in start  
+map features like grid position can be used in Awake
+- Addons are always placed in Pivot position, Center field removed
+- Building WorldCenter returns Pivot position including height
+- DefaultMapHeight set global position instead of localposition
+- apply Building height in Start instead of Initialize
+- renamed others folder to playgrounds
+- renamed remaining vector2int variables from position to point
+- added prefix to remaining defense assets
+- moved overlay material to core, cleaned up different materials in other projects
+- moved town border and light into setup prefab
+
 ## 1.8.8
 
 ### ADDED
