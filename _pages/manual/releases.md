@@ -6,6 +6,33 @@ sidebar:
   nav: manual
 ---
 
+## 1.9.1
+
+### ADDED
+- StructureTerrainTreeVariants manages multiple tree prototypes in one structure  
+can be tested using the 'Red' and 'Blu' tools in BuildingPlaygroundTerrain
+- StructureReplacer tool to replace points in one structure with another  
+can be tested using the 'RToB' and 'BToR' tools in BuildingPlaygroundTerrain
+- WalkerCategory holds collections of walkers for use in scores or road blocking
+- WalkerScore returns the active number of walkers of a certain type or category 
+
+### IMPROVED
+- SelectionTool now allows configuring selection methods and filters  
+select whether selecting buildings and walkers uses raycasts or points selection  
+also filters and masks to define which buildings and walkers are selectable
+- DefaultGameManager.StartedDebug for when the game is started with debug mission
+- IStructure.ReplacePoints additional parameters keepRandomization and keepVariant
+
+### CHANGED
+- NavMeshes in Town demo are no longer baked in debug and testing scenes  
+they are now generated at start like in regular stages 
+- DefaultGameManager now has very early execution order  
+previously Started event fired after structure initialization  
+this caused a bug in town demo when the hill stage was started directly
+
+### FIXED
+- ExpandableVisual did not take CellOffset into account
+
 ## 1.9.0
 
 ### ADDED
