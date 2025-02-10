@@ -18,6 +18,8 @@ Decorator structures are automatically removed when something is built on top of
 * IsWalkable  
 Whether the MapGrid Pathing Type includes the points of the structure 
 
+All structures implement the [IStructure](https://citybuilderapi.softleitner.com/interface_city_builder_core_1_1_i_structure.html) interface, the linked API page can give you an overview of the available components. Structures are often placed on the map using a [tool](https://citybuilderapi.softleitner.com/class_city_builder_core_1_1_base_tool.html) like the BuildingBuilder, RoadBuilder or StructureBuilder.
+
 ## Roads
 
 The DefaultRoadManager is a special structure that includes all the points that are filled out in the TileMap on the GameObject and does pathfinding between them.

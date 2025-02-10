@@ -13,7 +13,7 @@ Views can be used to alter the way the world looks and for presenting additional
 
 
 Views are ScriptableObjects which are found in the ContextMenu > CityBuilder-Views-...  
-The following Views are included in CCBK.  
+The following [Views](https://citybuilderapi.softleitner.com/class_city_builder_core_1_1_view.html) are included in CCBK.  
 
 * Composite  
 Placeholder for multiple other Views(only one view is active at a time in IViewsManager) 
@@ -34,8 +34,8 @@ To create your own View just derive from View and override the Activate and Deac
 
 ## Values
 
-IBuildingValue and IWalkerValue are used to query Builders and and Walkers for certain numbers. For example the implementation of IWalkerValue on the Item ScriptableObject returns the item quantity that the pertaining walker carries. Most Values are implemented in ScriptableObjects(Risks, Services, Items, ...). A good Example for a Value that is implemented on the View instead is the IHealther Interface.  
+[IBuildingValue](https://citybuilderapi.softleitner.com/interface_city_builder_core_1_1_i_building_value.html) and [IWalkerValue](https://citybuilderapi.softleitner.com/interface_city_builder_core_1_1_i_walker_value.html) are used to query Builders and and Walkers for certain numbers. For example the implementation of IWalkerValue on the Item ScriptableObject returns the item quantity that the pertaining walker carries. Most Values are implemented in ScriptableObjects(Risks, Services, Items, ...). A good Example for a Value that is implemented on the View instead is the IHealther Interface.  
 
 ## Bars
-Bars initiated by the Building-/WalkerBars Views and managed by the IBarManager are the visual representation of a IBuildingValue or IWalkerValue. They are not specific to a certain Value but rather just translate the number returned by the Value to a viewable form. When a BarView is activated the IBarManager instantiates Bars in all the appropriate entities.  
+Bars initiated by the Building-/WalkerBars Views and managed by the [IBarManager](https://citybuilderapi.softleitner.com/interface_city_builder_core_1_1_i_bar_manager.html) are the visual representation of a IBuildingValue or IWalkerValue. They are not specific to a certain Value but rather just translate the number returned by the Value to a viewable form. When a BarView is activated the IBarManager instantiates Bars in all the appropriate entities.  
 Creating a new Bar is done by deriving from BuildingValueBar or WalkerValueBar. These base classes provide all the necessary Methods to get the Values(HasValue, GetMaximum, GetValue, ....)

@@ -12,7 +12,7 @@ The different Score Scripts each implement a way of calculating a score value. T
   
 You can easily create your own scores by inheriting from Score and implementing the Calculate Method.  
 
-Some of the Scores included in CCBK are:
+Some of the [Scores](https://citybuilderapi.softleitner.com/class_city_builder_core_1_1_score.html) included in CCBK are:
 
 ### Average Building Score  
 Calculates the average value from different values assigned to Buildings
