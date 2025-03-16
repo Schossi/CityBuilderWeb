@@ -6,6 +6,39 @@ sidebar:
   nav: manual
 ---
 
+## 1.9.2
+
+### ADDED
+- Undo/Redo  
+build, replace and demolish are captured when IUndoRedoStack is present in scene  
+building state is captured in action and restored when it is re-added  
+stack is persisted and consistent across save/load  
+fires event with all affected points used for visualization  
+see playground scenes, defense, urban, three demos
+- more visual examples for build, demolish, selection  
+arise, drop, appear, dissolve, particles (see new tools in BuildingPlayground3D)  
+scaling animated selection border (see BuildingPlayground3D/Terrain/Expandable)
+- BuildingPlaygroundZones shows how structures can be used as zones
+
+### IMPROVED
+- partial expandable rework  
+ExpandableBuilder behaviour redone, new options for rotation, minsize  
+new IExpandableVisual interface allows different visual implementations  
+alternate expandable visual implementation called ExpandableVisualCapped  
+see new BuildingPlaygroundExpandable test scene
+- height mapped building grid and overlays  
+see GridVisual and Overlays in DebugTerrain scene in Three demo
+- additional particles and animations in urban demo
+- 'Rotate' option in building addons allows applying rotation from building
+
+### CHANGED
+- assets in urban demo are new also prefixed with 'urban'
+- id is moved over to new building in replacement
+- ui scaling adjusted in some demos
+
+### FIXED
+- error when renderer was removed while building was highlighted
+
 ## 1.9.1
 
 ### ADDED
