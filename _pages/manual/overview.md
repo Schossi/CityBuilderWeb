@@ -81,6 +81,10 @@ The demos use the built in renderer to provide maximum compatibility. Most of th
 
 The THREE demo uses some custom shader for its terrain which can be recreated in URP using certain settings in the renderer. These settings are included in the asset. They can be found in the CityBuilderThree/URP folder along with some instructions on how to upgrade to URP.
 
+## Input
+
+CCBK uses the built in input system. It is recommended to remove the new input system package if it was added from one of the newer templates in unity 6.
+
 ## Roadmap
 
 Current development is focused on three main areas:

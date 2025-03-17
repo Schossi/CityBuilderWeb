@@ -8,7 +8,7 @@ sidebar:
 
 A basic colony sim created in full 3D, inspired by games like banished.  
 
-<iframe frameborder="0" src="https://itch.io/embed-upload/8583869?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
+<iframe frameborder="0" src="https://itch.io/embed-upload/13109792?color=000000" allowfullscreen="0" width="980" height="688"></iframe>  
   
 A windows version is available for download on the itch page.
 <iframe frameborder="0" src="https://itch.io/embed/1842180" width="552" height="167"><a href="https://softleitner.itch.io/ccbk-3d-colony-sim-demo">CCBK 3D Colony Sim Demo by SoftLeitner</a></iframe>  

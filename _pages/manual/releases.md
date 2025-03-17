@@ -35,9 +35,12 @@ see GridVisual and Overlays in DebugTerrain scene in Three demo
 - assets in urban demo are new also prefixed with 'urban'
 - id is moved over to new building in replacement
 - ui scaling adjusted in some demos
+- BuildingAddonTransformer now also transforms position  
+settings to change if it resets and whether to hide initially
 
 ### FIXED
 - error when renderer was removed while building was highlighted
+- navmesh not updating properly on repeat loads in town demo
 
 ## 1.9.1
 
