@@ -85,6 +85,23 @@ The THREE demo uses some custom shader for its terrain which can be recreated in
 
 CCBK uses the built in input system. It is recommended to remove the new input system package if it was added from one of the newer templates in unity 6.
 
+## Navigation
+
+The newer NavMesh components are not currently used in CCBK. It still uses the global NavMesh workflow(baking navmesh from Navigation Tab) to maintain backwards compatibility to older Unity Versions. The difference between the two is not that big though and depending on the use case it can be changed relatively simply.
+
+For example to switch the Debug scene in the __Three__ demo we would do the following.
+- Delete the existing baked NavMesh in the Debug subfolder
+- Activate the 'Navigation' gameobject which contains the baking objects
+- On the red cube that blocks walking on the river create a NavMeshModifierVolume
+  - Set AreaType to 'NotWalkable' and adjust the Size
+- Create a NavMeshSurface component on 'Navigation'
+  - Set CollectionObjects to 'CurrentObjectHierarchy'
+  - Click the 'Bake' button to bake a new NavMesh
+- Deactivate the gameobjects below 'Navigation'
+- Click 'Play' and build a Property to check that navigation works correctly
+
+The 'CurrentObjectHierarchy' may not be applicable in all scenarios. When this is the case you may want to separate out different objects by layer and change the IncludeLayers setting. In the __Town__ demo no changes may need to be made whatsoever as the NavMesh is not baked upfront in that demo but instead by the NavMeshUpdater component.
+
 ## Roadmap
 
 Current development is focused on three main areas:
