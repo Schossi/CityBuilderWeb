@@ -23,7 +23,8 @@ This page covers only the first two evolutions, water and food. A completed vers
 
 ## Setup
 
-* Create a new unity project using the 2D template
+* Create a new unity project using the 2D template (Built-In)
+  * Remove the Input System Package if installed
 * Import TMP Essential Resources (Windows/TextMeshPro/...)
 * Import the CCBK Core Framework  
 

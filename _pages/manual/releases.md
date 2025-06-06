@@ -6,6 +6,15 @@ sidebar:
   nav: manual
 ---
 
+## 1.9.3
+
+### ADDED
+- town collection test scene
+- uvs for three road models
+
+### FIXED 
+- missing event systems in movement playgrounds
+
 ## 1.9.2
 
 ### ADDED
