@@ -6,6 +6,17 @@ sidebar:
   nav: manual
 ---
 
+## 1.9.4
+
+## IMPROVED
+- cooldown on risks and grace period on services
+
+## FIXED
+- duplicated walkers on reload when using object pool
+- homeless walkers going to full houses
+- risks assigned to wrong recipient
+- emigration walker not loading correctly
+
 ## 1.9.3
 
 ### ADDED
