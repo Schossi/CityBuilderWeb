@@ -6,6 +6,16 @@ sidebar:
   nav: manual
 ---
 
+## 1.9.5
+minimum recommended unity version has been raised to 2021.3.45
+
+## CHANGED
+- reserialized all assets
+
+## FIXED
+- retriever walker getting stuck on load
+- exceptions with missing walker descriptions
+
 ## 1.9.4
 
 ## IMPROVED
