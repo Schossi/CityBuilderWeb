@@ -6,22 +6,45 @@ sidebar:
   nav: manual
 ---
 
+## 1.10.0
+minimum recommended unity version has been raised to 6000.0.75  
+__render pipeline of all demo and test projects has been changed to URP__
+
+### ADDED
+- Terminating and Moving events on Building
+- Building- and Walker Root transform can be set on DefaultBuildingManager
+- WalkerAddons can be added on walker spawn and finish, for example to add effects  
+example addons from(Walking/Addon) used in three and some demo scenes
+- Support for new InputSystem(enabled by default, controls in CityInputActions)
+
+### CHANGED
+- walkers inside buildings are removed when a building is moved
+- NavMeshSurface added to three, defense and test scenes
+- town demo terrain trees use regular prefabs instead of obsolete unity Tree  
+this causes warnings and billboards not working, use speedtree to resolve
+- town demo felled trees uses StructureCollectionFloat and keep terrain randomization
+- reserialized all assets
+
+### FIXED
+- houses spawning in ground in three terrain demo
+- some minor issues in tests
+
 ## 1.9.5
 minimum recommended unity version has been raised to 2021.3.45
 
-## CHANGED
+### CHANGED
 - reserialized all assets
 
-## FIXED
+### FIXED
 - retriever walker getting stuck on load
 - exceptions with missing walker descriptions
 
 ## 1.9.4
 
-## IMPROVED
+### IMPROVED
 - cooldown on risks and grace period on services
 
-## FIXED
+### FIXED
 - duplicated walkers on reload when using object pool
 - homeless walkers going to full houses
 - risks assigned to wrong recipient

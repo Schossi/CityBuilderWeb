@@ -56,8 +56,10 @@ Import if you want to start by adapting this demo.
 Most demos depend on either layers, tags or sorting layers. __If these settings were not set during import please copy the contents of TagManager.txt from the demo folder to the TagManager.asset in you ProjectSettings.__  
 
 ### Dependencies
+* URP is used by default but none of the logic is tied to it(see CityBuilderCore/Settings)
+* New Input system is used for input by default but can be removed(see CityInputActions)
 * The demos depend on [TextMeshPro](http://docs.unity3d.com/Packages/com.unity.textmeshpro@2.1/index.html) for their UI
-* CCBK(even in 3D) generally depends on [2D Tilemap Editor](https://docs.unity3d.com/Packages/com.unity.2d.tilemap@1.0/manual/index.html)
+* Both 2D and 3D variants depend on [2D Tilemap Editor](https://docs.unity3d.com/Packages/com.unity.2d.tilemap@1.0/manual/index.html)
 
 ## Usage
 
@@ -73,42 +75,9 @@ If none of the demos gets close enough to what you want to make or you want to m
 * Implementing Custom Logic  
 Need some special sauce in your game and know basic C#. [Continue Here]({% link _pages/manual/howto/custom.md %}) for a step to step guide to extending CCBK with your own components and systems.
 
-## URP
+## Render Pipeline
 
-If your project does __not use URP__ please make sure the URP __package is not installed__. Some shaders like ThreeMapRoad and HeightMapped render differently when the package is present. Having the URP package but using Built-In can lead to wrong visuals.
-
-The demos use the built in renderer to provide maximum compatibility. Most of the materials use default built in shaders which can be automatically upgraded using the URP Material Converter.  
-
-The THREE demo uses some custom shader for its terrain which can be recreated in URP using certain settings in the renderer. These settings are included in the asset. They can be found in the CityBuilderThree/URP folder along with some instructions on how to upgrade to URP.
-
-## Input
-
-CCBK uses the built in input system. It is recommended to remove the new input system package if it was added from one of the newer templates in unity 6.
-
-## Navigation
-
-The newer NavMesh components are not currently used in CCBK. It still uses the global NavMesh workflow(baking navmesh from Navigation Tab) to maintain backwards compatibility to older Unity Versions. The difference between the two is not that big though and depending on the use case it can be changed relatively simply.
-
-For example to switch the Debug scene in the __Three__ demo we would do the following.
-- Delete the existing baked NavMesh in the Debug subfolder
-- Activate the 'Navigation' gameobject which contains the baking objects
-- On the red cube that blocks walking on the river create a NavMeshModifierVolume
-  - Set AreaType to 'NotWalkable' and adjust the Size
-- Create a NavMeshSurface component on 'Navigation'
-  - Set CollectionObjects to 'CurrentObjectHierarchy'
-  - Click the 'Bake' button to bake a new NavMesh
-- Deactivate the gameobjects below 'Navigation'
-- Click 'Play' and build a Property to check that navigation works correctly
-
-The 'CurrentObjectHierarchy' may not be applicable in all scenarios. When this is the case you may want to separate out different objects by layer and change the IncludeLayers setting. In the __Town__ demo no changes may need to be made whatsoever as the NavMesh is not baked upfront in that demo but instead by the NavMeshUpdater component.
-
-## Roadmap
-
-Current development is focused on three main areas:
-
-* polishing the demos
-* extending and refining core
-* improving documentation
+The core framework is no tied to any render pipeline. The demos, example and test scenes use URP for their visuals since update 1.10.0. Most materials should convert find using the Unity converter. All custom shaders that were previously used in BIRP are still contained in the asset. Most prominently ThreeMap and ThreeMapRoad in CityBuilderThree/Materials/Shaders which are used for Map and Road materials. Trees in the Town demo for BIRP can be found in CityBuilderTown/Prefabs/Trees/BIRP.
 
 ## Feedback
 
