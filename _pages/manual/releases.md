@@ -18,7 +18,7 @@ example addons from(Walking/Addon) used in three and some demo scenes
 - Support for new InputSystem(enabled by default, controls in CityInputActions) 
 
 ### CHANGED
-- walkers inside buildings are removed when a building is moved
+- walkers inside building transforms are removed when a building is moved
 - NavMeshSurface added to three, defense and test scenes
 - town demo terrain trees use regular prefabs instead of obsolete unity Tree  
 this causes warnings and billboards not working, use speedtree to resolve
