@@ -77,7 +77,7 @@ Need some special sauce in your game and know basic C#. [Continue Here]({% link 
 
 ## Render Pipeline
 
-The core framework is no tied to any render pipeline. The demos, example and test scenes use URP for their visuals since update 1.10.0. Most materials should convert find using the Unity converter. All custom shaders that were previously used in BIRP are still contained in the asset. Most prominently ThreeMap and ThreeMapRoad in CityBuilderThree/Materials/Shaders which are used for Map and Road materials. Trees in the Town demo for BIRP can be found in CityBuilderTown/Prefabs/Trees/BIRP.
+The core framework is no tied to any render pipeline. The demos, example and test scenes use URP for their visuals since update 1.10.0. Most materials should convert fine using the Unity converter. All custom shaders that were previously used in BIRP are still contained in the asset. Most prominently ThreeMap and ThreeMapRoad in CityBuilderThree/Materials/Shaders which are used for Map and Road materials. Trees in the Town demo for BIRP can be found in CityBuilderTown/Prefabs/Trees/BIRP.
 
 ## Feedback
 
