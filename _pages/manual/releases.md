@@ -7,7 +7,7 @@ sidebar:
 ---
 
 ## 1.10.0
-minimum recommended unity version has been raised to 6000.0.75  
+minimum recommended unity version has been raised to 6000.0.76  
 __render pipeline of all demo and test projects has been changed to URP__
 
 ### ADDED
@@ -15,7 +15,7 @@ __render pipeline of all demo and test projects has been changed to URP__
 - Building- and Walker Root transform can be set on DefaultBuildingManager
 - WalkerAddons can be added on walker spawn and finish, for example to add effects  
 example addons from(Walking/Addon) used in three and some demo scenes
-- Support for new InputSystem(enabled by default, controls in CityInputActions)
+- Support for new InputSystem(enabled by default, controls in CityInputActions) 
 
 ### CHANGED
 - walkers inside buildings are removed when a building is moved
